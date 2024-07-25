@@ -1,0 +1,137 @@
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\Projeto Sistema de Vendas.csproj.AssemblyReference.cache
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\Projeto Sistema de Vendas.GeneratedMSBuildEditorConfig.editorconfig
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\Projeto Sistema de Vendas.AssemblyInfoInputs.cache
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\Projeto Sistema de Vendas.AssemblyInfo.cs
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\Projeto Sistema de Vendas.csproj.CoreCompileInputs.cache
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\Projeto Sistema de Vendas.MvcApplicationPartsAssemblyInfo.cache
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\Projeto Sistema de Vendas.RazorAssemblyInfo.cache
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\Projeto Sistema de Vendas.RazorAssemblyInfo.cs
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\appsettings.Development.json
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\appsettings.json
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Projeto Sistema de Vendas.staticwebassets.runtime.json
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Projeto Sistema de Vendas.exe
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Projeto Sistema de Vendas.deps.json
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Projeto Sistema de Vendas.runtimeconfig.json
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Projeto Sistema de Vendas.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Projeto Sistema de Vendas.pdb
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Azure.Core.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Azure.Identity.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Humanizer.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\Mono.TextTemplating.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\System.CodeDom.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\System.Composition.Convention.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\System.Composition.Hosting.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\System.Composition.Runtime.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\System.Composition.TypedParts.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\System.Drawing.Common.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\System.Memory.Data.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\System.Runtime.Caching.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\System.Security.Permissions.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\System.Text.Json.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\System.Windows.Extensions.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+G:\Guilherme\Projeto Sistema de Vendas\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\staticwebassets.build.json
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\staticwebassets.development.json
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\staticwebassets\msbuild.Projeto Sistema de Vendas.Microsoft.AspNetCore.StaticWebAssets.props
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\staticwebassets\msbuild.build.Projeto Sistema de Vendas.props
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Projeto Sistema de Vendas.props
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Projeto Sistema de Vendas.props
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\staticwebassets.pack.json
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\scopedcss\bundle\Projeto Sistema de Vendas.styles.css
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\scopedcss\projectbundle\Projeto Sistema de Vendas.bundle.scp.css
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\Projeto .86F4541F.Up2Date
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\Projeto Sistema de Vendas.dll
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\refint\Projeto Sistema de Vendas.dll
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\Projeto Sistema de Vendas.pdb
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\Projeto Sistema de Vendas.genruntimeconfig.cache
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\ref\Projeto Sistema de Vendas.dll
