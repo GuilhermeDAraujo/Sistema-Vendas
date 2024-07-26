@@ -135,3 +135,4 @@ G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\refint\Projeto Sistema d
 G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\Projeto Sistema de Vendas.pdb
 G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\Projeto Sistema de Vendas.genruntimeconfig.cache
 G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\ref\Projeto Sistema de Vendas.dll
+G:\Guilherme\Projeto Sistema de Vendas\obj\Debug\net8.0\Projeto Sistema de Vendas.sourcelink.json
