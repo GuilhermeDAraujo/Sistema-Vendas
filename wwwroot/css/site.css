@@ -1,39 +1,22 @@
-html,
-body {
-  height: 100%;
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-  display: outside;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  background-color: #ffffff;
-}
-
-.form-signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 5px;
-  margin: auto;
-}
-
-.form-signin .checkbox {
-  font-weight: 400;
-}
-
-.form-signin .form-floating:focus-within {
-  z-index: 2;
-}
-
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="senha"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  margin-bottom: 60px;
 }

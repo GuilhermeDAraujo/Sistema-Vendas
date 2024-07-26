@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Projeto Sistema de Vendas.bundle.scp.css"
     },
     {
+      "Id": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\css\\View\\Login.css",
+      "PackagePath": "staticwebassets\\css\\View\\Login.css"
+    },
+    {
       "Id": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
