@@ -14,6 +14,7 @@ namespace Projeto_Sistema_de_Vendas.Context
         public DbSet<Produto> Produtos {get;set;}
         public DbSet<VendaProduto> VendaProdutos {get;set;}
         public DbSet<Cliente> Clientes {get;set;}
+        
         public SistemaVendaContext(DbContextOptions<SistemaVendaContext> options) : base (options)
         {
 

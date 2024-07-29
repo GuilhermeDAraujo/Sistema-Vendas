@@ -1,4 +1,4 @@
-@model Projeto_Sistema_de_Vendas.Models.Login
+@model Projeto_Sistema_de_Vendas.ViewModels.LoginViewModel
 
 <head>
     <link rel="stylesheet" href="~/css/Views/Login.css" />
@@ -11,14 +11,29 @@
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card border-0 shadow rounded-3 my-5">
           <div class="card-body p-4 p-sm-5">
-            <h5 class="card-title text-center mb-5 fw-light fs-5">Entrar</h5>
-            <form asp-action="Login">
+            <h2 class="card-title text-center mb-4 fw-light fs-8">Sistema Vendas</h2>
+
+            @{
+              try
+              {
+                var erro = TempData["ErrorLogin"].ToString();
+                <h6 class="text-danger">@erro</h6>
+              }
+              catch
+              {
+
+              }
+            }
+
+            <form asp-controller="Home" asp-action="Login">
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="email" class="form-control" asp-for="Email" id="floatingInput" placeholder="name@example.com">
+                <span asp-validation-for="Email" class="text-danger"></span>
                 <label for="floatingInput">Email</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input type="password" class="form-control" asp-for="Senha" id="floatingPassword" placeholder="Password">
+                <span asp-validation-for="Senha" class="text-danger"></span>
                 <label for="floatingPassword">Senha</label>
               </div>
 
