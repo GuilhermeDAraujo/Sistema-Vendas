@@ -10,6 +10,9 @@ builder.Services.AddDbContext<SistemaVendaContext>(options =>
 
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddHttpContextAccessor();
+
+//Session para o Login
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(30); // Define o tempo de expiração da sessão
@@ -34,12 +37,13 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+//Session para o Login
 app.UseSession();
 
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Login}/{id?}");
 
 app.Run();

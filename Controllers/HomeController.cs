@@ -35,6 +35,7 @@ public class HomeController : Controller
 
     public IActionResult Login()
     {
+        HttpContext.Session.Clear();
         return View();
     }
 
@@ -48,7 +49,7 @@ public class HomeController : Controller
             if(cliente != null)
             {
                 HttpContext.Session.SetString("IdUsuarioLogado",cliente.Id.ToString());
-                HttpContext.Session.SetString("NomeUsiarioLogado",cliente.Nome);
+                HttpContext.Session.SetString("NomeUsuarioLogado",cliente.Nome);
                 return RedirectToAction(nameof(Menu));
             }
             else
