@@ -44,12 +44,12 @@ public class HomeController : Controller
     {
         if(ModelState.IsValid)
         {   
-            var cliente = _context.Clientes.FirstOrDefault(c => c.Email == login.Email && c.Senha == login.Senha);
+            var vendedor = _context.Vendedores.FirstOrDefault(v => v.Email == login.Email && v.Senha == login.Senha);
 
-            if(cliente != null)
+            if(vendedor != null)
             {
-                HttpContext.Session.SetString("IdUsuarioLogado",cliente.Id.ToString());
-                HttpContext.Session.SetString("NomeUsuarioLogado",cliente.Nome);
+                HttpContext.Session.SetString("IdUsuarioLogado",vendedor.Id.ToString());
+                HttpContext.Session.SetString("NomeUsuarioLogado",vendedor.Nome);
                 return RedirectToAction(nameof(Menu));
             }
             else

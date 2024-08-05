@@ -17,6 +17,30 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\clientes.png",
+      "PackagePath": "staticwebassets\\images\\clientes.png"
+    },
+    {
+      "Id": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\configuracoes.png",
+      "PackagePath": "staticwebassets\\images\\configuracoes.png"
+    },
+    {
+      "Id": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\produtos.png",
+      "PackagePath": "staticwebassets\\images\\produtos.png"
+    },
+    {
+      "Id": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\relatorios.png",
+      "PackagePath": "staticwebassets\\images\\relatorios.png"
+    },
+    {
+      "Id": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\vendas.png",
+      "PackagePath": "staticwebassets\\images\\vendas.png"
+    },
+    {
+      "Id": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\vendedores.png",
+      "PackagePath": "staticwebassets\\images\\vendedores.png"
+    },
+    {
       "Id": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

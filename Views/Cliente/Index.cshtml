@@ -1,0 +1,45 @@
+@model IEnumerable<Projeto_Sistema_de_Vendas.Models.Cliente>
+
+
+<h1>Clientes Cadastrados</h1>
+
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nome do Cliente</th>
+            <th>CPF ou CNPJ</th>
+            <th>E-mail</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(Model => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(Model => item.CpfCnpj)
+                </td>
+                <td>
+                    @Html.DisplayFor(Model => item.Email)
+                </td>
+                <td>
+                    <a asp-action="Editar" asp-route-id="@item.Id" class="btn btn-primary">Editar</a>
+                    <a asp-action="Excluir" asp-route-id="@item.Id" class="btn btn-danger">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br/>
+<div>
+    <a asp-action="Cadastrar" class="btn btn-primary" style="display: block; width: 100%;">Cadastrar Novo Cliente</a>
+</div>
+<br/>
+<div>
+    <a asp-action="Menu" asp-controller="Home" class="btn btn-success" style="display: block; width: 100%;">Voltar</a>
+</div>
