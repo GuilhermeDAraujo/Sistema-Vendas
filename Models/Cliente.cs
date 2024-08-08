@@ -21,11 +21,8 @@ namespace Projeto_Sistema_de_Vendas.Models
         [EmailAddress(ErrorMessage = "O e-mail informado é inválido!")]        
         public string Email {get;set;}
 
-        [Required(ErrorMessage = "Informe a senha do usúario!")]
         public string Senha {get;set;}
 
-        public ICollection<Venda> Vendas {get;set;}
-        
-        
+        public ICollection<Venda> Vendas {get;set;}   
     }
 }

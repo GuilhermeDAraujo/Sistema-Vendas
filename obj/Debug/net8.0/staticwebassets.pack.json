@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\View\\Login.css"
     },
     {
+      "Id": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\css\\View\\Menu.css",
+      "PackagePath": "staticwebassets\\css\\View\\Menu.css"
+    },
+    {
       "Id": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
