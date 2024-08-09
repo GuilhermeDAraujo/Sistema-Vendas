@@ -1,12 +1,14 @@
-@model IEnumerable<Projeto_Sistema_de_Vendas.Models.Cliente>
+@model IEnumerable<Projeto_Sistema_de_Vendas.Models.Vendedor>
 
-<h1>Clientes Cadastrados</h1>
+
+<h1>Vendedores Cadastrados</h1>
+
+
 
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>Nome do Cliente</th>
-            <th>CPF ou CNPJ</th>
+            <th>Nome do Vendedor</th>
             <th>E-mail</th>
             <th></th>
         </tr>
@@ -17,9 +19,6 @@
             <tr>
                 <td>
                     @Html.DisplayFor(Model => item.Nome)
-                </td>
-                <td>
-                    @Html.DisplayFor(Model => item.CpfCnpj)
                 </td>
                 <td>
                     @Html.DisplayFor(Model => item.Email)
@@ -33,6 +32,6 @@
     </tbody>
 </table>
 <br/>
-<a asp-action="Cadastrar" class="btn btn-primary w-100">Cadastrar Novo Cliente</a>
+<a asp-action="Cadastrar" class="btn btn-primary w-100">Cadastrar Novo Vendedor</a>
 
 <a asp-action="Menu" asp-controller="Home" class="btn btn-success w-100 mt-3">Voltar</a>

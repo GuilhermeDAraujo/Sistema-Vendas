@@ -1,6 +1,6 @@
-@model Projeto_Sistema_de_Vendas.Models.Cliente
+@model Projeto_Sistema_de_Vendas.Models.Vendedor
 
-<h1>Excluir Cliente</h1>
+<h1>Excluir Vendedor</h1>
 
 <div class="row">
         <form asp-action="Excluir" onsubmit="return confirmExluir();">
@@ -9,10 +9,6 @@
             <div class="form-group">
                 <label asp-for="Nome" class="control-label"><strong>Nome</strong></label>
                 <input asp-for="Nome" class="form-control" readonly />
-            </div>
-            <div class="form-group">
-                <label asp-for="CpfCnpj" class="control-label"><strong>CPF ou CNPJ</strong></label>
-                <input asp-for="CpfCnpj" class="form-control" readonly />
             </div>
             <div class="form-group">
                 <label asp-for="Email"class="control-label"><strong>E-mail</strong></label>
@@ -29,10 +25,9 @@
 <script type = "text/javascript">
     function confirmExluir(){
         var nome = "@Model.Nome";
-        var cpfCnpj = "@Model.CpfCnpj";
         var email = "@Model.Email";
 
-        var mensagem = `Tem certeza que deseja excluir o cliente: \nNome: ${nome} \nCPF/CNPJ: ${cpfCnpj} \nEmail: ${email}`;
+        var mensagem = `Tem certeza que deseja excluir o cliente: \nNome: ${nome} \nEmail: ${email}`;
         return confirm(mensagem);
     }
 </script>

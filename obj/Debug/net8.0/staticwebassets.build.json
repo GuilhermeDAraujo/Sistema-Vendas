@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BF+7AQZvOnwC/C4yoqSvETXt8wGr264O2w4ICPFEBZs=",
+  "Hash": "n38tOAlCINBek2Jrtk77PtkxiKjsXtMt7+s5pirZltI=",
   "Source": "Projeto Sistema de Vendas",
   "BasePath": "_content/Projeto Sistema de Vendas",
   "Mode": "Default",
@@ -91,25 +91,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\View\\Login.css"
-    },
-    {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\css\\View\\Menu.css",
-      "SourceId": "Projeto Sistema de Vendas",
-      "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
-      "BasePath": "_content/Projeto Sistema de Vendas",
-      "RelativePath": "css/View/Menu.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\View\\Menu.css"
     },
     {
       "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\favicon.ico",
