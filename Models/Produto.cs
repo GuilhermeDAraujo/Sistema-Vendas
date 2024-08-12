@@ -44,11 +44,11 @@ namespace Projeto_Sistema_de_Vendas.Models
             return new List<SelectListItem>
             {
                 new SelectListItem  {Value = "", Text = "Selecione..."},
-                new SelectListItem  {Value = "U", Text = "Unidade"},
-                new SelectListItem  {Value = "K", Text = "KG"},
-                new SelectListItem  {Value = "G", Text = "GR"},
-                new SelectListItem  {Value = "L", Text = "Litro"},
-                new SelectListItem  {Value = "C", Text = "Caixa"}
+                new SelectListItem  {Value = "UN", Text = "Unidade"},
+                new SelectListItem  {Value = "KG", Text = "KG"},
+                new SelectListItem  {Value = "GR", Text = "GR"},
+                new SelectListItem  {Value = "LT", Text = "Litro"},
+                new SelectListItem  {Value = "CX", Text = "Caixa"}
             };
         }
     }

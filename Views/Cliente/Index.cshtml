@@ -5,26 +5,26 @@
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>Nome do Cliente</th>
-            <th>CPF ou CNPJ</th>
-            <th>E-mail</th>
-            <th></th>
+            <th class="text-center align-middle">Nome do Cliente</th>
+            <th class="text-center align-middle">CPF ou CNPJ</th>
+            <th class="text-center align-middle">E-mail</th>
+            <th class="text-center align-middle"></th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
             <tr>
-                <td>
+                <td class="text-center align-middle">
                     @Html.DisplayFor(Model => item.Nome)
                 </td>
-                <td>
+                <td class="text-center align-middle">
                     @Html.DisplayFor(Model => item.CpfCnpj)
                 </td>
-                <td>
+                <td class="text-center align-middle">
                     @Html.DisplayFor(Model => item.Email)
                 </td>
-                <td>
+                <td class="text-center align-middle">
                     <a asp-action="Editar" asp-route-id="@item.Id" class="btn btn-primary">Editar</a>
                     <a asp-action="Excluir" asp-route-id="@item.Id" class="btn btn-danger">Excluir</a>
                 </td>

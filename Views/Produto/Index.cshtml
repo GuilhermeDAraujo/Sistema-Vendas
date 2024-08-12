@@ -5,39 +5,40 @@
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>Nome do Produto</th>
-            <th>Descrição</th>
-            <th>Preço Unitário</th>
-            <th>Quantidade em Estoque</th>
-            <th>Unidade Medida</th>
-            <th>Foto</th>
+            <th class="text-center align-middle">Nome do Produto</th>
+            <th class="text-center align-middle">Descrição</th>
+            <th class="text-center align-middle">Preço Unitário</th>
+            <th class="text-center align-middle">Quantidade em Estoque</th>
+            <th class="text-center align-middle">Unidade Medida</th>
+            <th class="text-center align-middle">Foto</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
             <tr>
-                <td>
+                <td class="text-center align-middle">
                     @Html.DisplayFor(Model => item.Nome)
                 </td>
-                <td>
+                <td class="text-center align-middle">
                     @Html.DisplayFor(Model => item.Descricao)
                 </td>
-                <td>
+                <td class="text-center align-middle">
                     @Html.DisplayFor(Model => item.PrecoUnitario)
                 </td>
-                <td>
+                <td class="text-center align-middle">
                     @Html.DisplayFor(Model => item.QuantidadeEmEstoque)
                 </td>
-                <td>
+                <td class="text-center align-middle">
                     @Html.DisplayFor(Model => item.UnidadeDeMedidaProduto)
                 </td>
                 <td>
-                    @Html.DisplayFor(Model => item.Foto)
+                    <img src=" @Html.DisplayFor(Model => item.Foto)" width="auto" height="auto"/>
                 </td>
-                <td>
-                    <a asp-action="Editar" asp-route-id="@item.Id" class="btn btn-primary">Editar</a>
-                    <a asp-action="Excluir" asp-route-id="@item.Id" class="btn btn-danger">Excluir</a>
+                <td class="text-center align-middle">
+                    <a asp-action="Editar" asp-route-id="@item.Id" class="btn btn-primary mt-3">Editar</a>
+                    <a asp-action="Excluir" asp-route-id="@item.Id" class="btn btn-danger mt-3">Excluir</a>
                 </td>
             </tr>
         }

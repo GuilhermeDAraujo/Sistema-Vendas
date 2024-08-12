@@ -17,12 +17,12 @@
             <div class="form-group">
                 <label asp-for="PrecoUnitario" class="control-label"><strong>Preço Unitário</strong></label>
                 <span asp-validation-for="PrecoUnitario" class="text-danger"></span>
-                <input asp-for="PrecoUnitario" class="form-control" />
+                <input asp-for="PrecoUnitario" class="form-control formatarValorDecimal" value="0,00"/>
             </div>
             <div class="form-group">
                 <label asp-for="QuantidadeEmEstoque" class="control-label"><strong>Quantidade em Estoque</strong></label>
                 <span asp-validation-for="QuantidadeEmEstoque" class="text-danger"></span>
-                <input asp-for="QuantidadeEmEstoque" class="form-control" />
+                <input asp-for="QuantidadeEmEstoque" class="form-control formatarValorDecimal" value="0,00"/>
             </div>
             <div class="form-group">
                 <label asp-for="UnidadeDeMedidaProduto" class="control-label"><strong>Unidade de Medida</strong></label>
@@ -41,3 +41,19 @@
         </form>
 </div>
 <a asp-action="Index" class="btn btn-success w-100 mt-3">Voltar</a>
+
+@section Scripts{
+    <script>
+        $(document).ready(function(){
+            $('.formatarValorDecimal').on('input', function() {
+                let value = $(this).val().replace(/\D/g, '');
+                if(value.length > 2){
+                    let formattedValue = value.slice(0, -2) + ',' + value.slice(-2);
+                    $(this).val(formattedValue);
+                } else {
+                    $(this).val(value);
+                }
+            });
+        });
+    </script>
+}

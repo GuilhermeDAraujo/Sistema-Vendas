@@ -12,7 +12,6 @@ namespace Projeto_Sistema_de_Vendas.Models
 
         public int ProdutoId {get;set;}
         public Produto Produto {get;set;}
-
         public decimal QuantidadeVendida {get;set;}
         public decimal ValorProduto {get;set;}
     }

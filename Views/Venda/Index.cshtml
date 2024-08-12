@@ -1,0 +1,41 @@
+@model IEnumerable<Projeto_Sistema_de_Vendas.Models.Venda>
+
+<h1>Vendas Registradas</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="text-center align-middle">Data da Venda</th>
+            <th class="text-center align-middle">Total</th>
+            <th class="text-center align-middle">Vendedor</th>
+            <th class="text-center align-middle">Cliente</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="text-center align-middle">
+                    @Html.DisplayFor(Model => item.DataVenda)
+                </td>
+                <td class="text-center align-middle">
+                    @Html.DisplayFor(Model => item.Total)
+                </td>
+                <td class="text-center align-middle">
+                    @Html.DisplayFor(Model => item.VendedorId)
+                </td>
+                <td class="text-center align-middle">
+                    @Html.DisplayFor(Model => item.ClienteId)
+                </td>
+                <td class="text-center align-middle">
+                    <a asp-action="Editar" asp-route-id="@item.Id" class="btn btn-primary mt-3">Editar</a>
+                    <a asp-action="Excluir" asp-route-id="@item.Id" class="btn btn-danger mt-3">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br/>
+<a asp-action="Cadastrar" class="btn btn-primary w-100">Cadastrar Nova Venda</a>
+
+<a asp-action="Menu" asp-controller="Home" class="btn btn-success w-100 mt-3">Voltar</a>
