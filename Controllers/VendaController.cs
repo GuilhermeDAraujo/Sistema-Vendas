@@ -12,6 +12,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
     public class VendaController : Controller
     {
         private readonly SistemaVendaContext _context;
+
         public VendaController(SistemaVendaContext context)
         {
             _context = context;
@@ -27,11 +28,10 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         {
             var model = new Venda
             {
-                DataVenda = DateTime.Now
+                DataVenda = DateTime.Now.Date
             };
-            ViewBag.Cliente = new SelectList(_context.Clientes.ToList(), "Id", "Nome");
-            ViewBag.Vendedor = new SelectList(_context.Vendedores.ToList(), "Id", "Nome");
-            ViewBag.Produto = new SelectList(_context.Produtos.ToList(), "Id", "Nome");
+            
+            CarregarViewBag();
             return View(model);
         }
 
@@ -48,11 +48,15 @@ namespace Projeto_Sistema_de_Vendas.Controllers
                 }
             }
 
+            CarregarViewBag();
+            return View(venda);
+        }
+
+        public void CarregarViewBag()
+        {
             ViewBag.Cliente = new SelectList(_context.Clientes.ToList(), "Id", "Nome");
             ViewBag.Vendedor = new SelectList(_context.Vendedores.ToList(), "Id", "Nome");
             ViewBag.Produto = new SelectList(_context.Produtos.ToList(), "Id", "Nome");
-
-            return View(venda);
         }
     }
 }

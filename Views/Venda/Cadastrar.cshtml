@@ -2,93 +2,86 @@
 
 <h1>Cadastrar Nova Venda</h1>
 
-<div class="row">
-    <form asp-action="Cadastrar">
-        <div class="form-group">
-            <label asp-for="ClienteId" class="control-label"><strong>Cliente</strong></label>
-            <select asp-for="ClienteId" asp-items="@ViewBag.Cliente" class="form-control"></select>
-        </div>
-        <div class="form-group">
-            <label asp-for="VendedorId" class="control-label"><strong>Vendedor</strong></label>
-            <select asp-for="VendedorId" asp-items="@ViewBag.Vendedor" class="form-control"></select>
-        </div>
+<form asp-action="Cadastrar">
+    <div class="form-group">
+        <label asp-for="ClienteId" class="control-label"><strong>Cliente</strong></label>
+        <select asp-for="ClienteId" asp-items="@ViewBag.Cliente" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="VendedorId" class="control-label"><strong>Vendedor</strong></label>
+        <select asp-for="VendedorId" asp-items="@ViewBag.Vendedor" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="DataVenda" class="control-label"><strong>Data da Venda</strong></label>
+        <input asp-for="DataVenda" class="form-control" />
+    </div>
 
-
-        <div class="form-group ">
-            <div class="row">
-                <div class="col-md-4">
-                    <label for="ProdutoId" class="control-label"><strong>Produto</strong></label>
-                    <select id="ProdutoId" name="ProdutoId" asp-items="@ViewBag.Produto" class="form-control"></select>
-                </div>
-                <div class="col-md-4" id="txtQuantidade">
-                    <label for="Quantidade" class="control-label"><strong>Quantidade</strong></label>
-                    <input type="text" id="txtQuantidade" class="form-control" value="1" />
-                </div>
-                <div class="col-md-4 d-flex align-items-end">
-                    <button type="submit" class="btn btn-primary w-100" onclick="AdicionarProduto()">Adicionar</button>
-                </div>
+    <div class="form-group ">
+        <div class="row">
+            <div class="col-md-4">
+                <label for="ProdutoId" class="control-label"><strong>Produto</strong></label>
+                <select id="ProdutoId" name="ProdutoId" asp-items="@ViewBag.Produto" class="form-control"></select>
+            </div>
+            <div class="col-md-4">
+                <label for="Quantidade" class="control-label"><strong>Quantidade</strong></label>
+                <input type="text" id="QuantidadeProduto" class="form-control" value="1" />
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+                <button type="button" class="btn btn-primary w-100" onclick="AdicionarProduto()">Adicionar a Lista</button>
             </div>
         </div>
+    </div>
 
-        <div class="form-group">
-            <label asp-for="DataVenda" class="control-label"><strong>Data da Venda</strong></label>
-            <input asp-for="DataVenda" class="form-control" />
-        </div>
+    <br>
 
-        <br>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="text-center align-middle">Produto</th>
+                <th class="text-center align-middle">Quantidade</th>
+                <th class="text-center align-middle">Preço Unitário</th>
+                <th class="text-center align-middle">Total</th>
+            </tr>
+        </thead>
 
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th class="text-center align-middle">Produto</th>
-                    <th class="text-center align-middle">Quantidade</th>
-                    <th class="text-center align-middle">Preço Unitário</th>
-                    <th class="text-center align-middle">Total</th>
-                </tr>
-            </thead>
+        <tbody id="listaProdutos">
+            @* Os produtos serão inseridos aqui via JavaScript *@
+        </tbody>
 
-            <tbody id="listaProdutos">
-                    @* Os produtos serão inseridos aqui via JavaScript *@
-            </tbody>
+    </table>
 
-        </table>
-
-        <br>
-        <div class="form-group">
-            <input type="submit" value="Cadastrar" class="btn btn-primary w-100" />
-        </div>
-    </form>
-</div>
+    <br>
+    <div class="form-group">
+        <input type="submit" value="Cadastrar" class="btn btn-primary w-100" />
+    </div>
+</form>
 <a asp-action="Index" class="btn btn-success w-100 mt-3">Voltar</a>
 
 <script>
-    var Itens = new Object();
-    Itens.Produtos = new Array();
+    var Itens = {Produtos: []};
 
     var CodigoProduto = document.getElementById("ProdutoId");
-    var QuantidadeProduto = document.getElementById("txtQuantidade");
+    var QuantidadeProduto = document.getElementById("QuantidadeProduto");
     var ListaProdutos = document.getElementById("listaProdutos");
 
     function AdicionarProduto() {
-        var produtoId = CodigoProduto.value;
-        var descricaoProduto = CodigoProduto.options[CodigoProduto.selectedIndex].text;
+        var produtoId = CodigoProduto.options[CodigoProduto.selectedIndex].text;
         var quantidade = QuantidadeProduto.value;
-        var precoUnitario = "0";
-        var total = "0";
+        var precoUnitario = "1";
+        var total = (quantidade * precoUnitario).toFixed(2);
 
 
         Itens.Produtos.push({
             "CodigoProduto": produtoId,
-            "DescricaoProduto": descricaoProduto,
             "QuantidadeProduto": quantidade,
             "PrecoUnitario": precoUnitario,
             "Total": total
 
         });
 
-        var linhaProduto = 
+        var linhaProduto = `
             <tr>
-                <td class="text-center align-middle">${descricaoProduto}</td>
+                <td class="text-center align-middle">${produtoId}</td>
                 <td class="text-center align-middle">${quantidade}</td>
                 <td class="text-center align-middle">${precoUnitario}</td>
                 <td class="text-center align-middle">${total}</td>
@@ -96,7 +89,7 @@
                     <button type="button" class="btn btn-primary">Editar</button>
                     <button type="button" class="btn btn-danger">Excluir</button>
                 </td>
-            </tr>;
+            </tr>`;
 
         ListaProdutos.innerHTML += linhaProduto;
     }
