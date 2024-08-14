@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -28,7 +30,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         {
             var model = new Venda
             {
-                DataVenda = DateTime.Now.Date
+                DataVenda = DateTime.Now
             };
             
             CarregarViewBag();
@@ -57,6 +59,17 @@ namespace Projeto_Sistema_de_Vendas.Controllers
             ViewBag.Cliente = new SelectList(_context.Clientes.ToList(), "Id", "Nome");
             ViewBag.Vendedor = new SelectList(_context.Vendedores.ToList(), "Id", "Nome");
             ViewBag.Produto = new SelectList(_context.Produtos.ToList(), "Id", "Nome");
+        }
+
+        public JsonResult GetPrecoProduto(int id)
+        {
+            var produto = _context.Produtos.Find(id);
+            if(produto != null)
+            {
+                return Json(new {preco = produto.PrecoUnitario});
+            }
+
+            return Json(new {preco = 0});
         }
     }
 }

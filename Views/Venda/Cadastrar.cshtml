@@ -16,6 +16,8 @@
         <input asp-for="DataVenda" class="form-control" />
     </div>
 
+    <input type="hidden" id="TotalVenda" name="Total" value="0" />
+
     <div class="form-group ">
         <div class="row">
             <div class="col-md-4">
@@ -27,7 +29,8 @@
                 <input type="text" id="QuantidadeProduto" class="form-control" value="1" />
             </div>
             <div class="col-md-4 d-flex align-items-end">
-                <button type="button" class="btn btn-primary w-100" onclick="AdicionarProduto()">Adicionar a Lista</button>
+                <button type="button" class="btn btn-primary w-100" onclick="AdicionarProduto()">Adicionar a
+                    Lista</button>
             </div>
         </div>
     </div>
@@ -50,6 +53,11 @@
 
     </table>
 
+
+    <div style="float: right; font-size:22px; margin-left:5px;" id="divTotal">0,00</div>
+    <div style="float: right; font-size:22px;">Total R$:</div>
+
+    <br>
     <br>
     <div class="form-group">
         <input type="submit" value="Cadastrar" class="btn btn-primary w-100" />
@@ -58,39 +66,55 @@
 <a asp-action="Index" class="btn btn-success w-100 mt-3">Voltar</a>
 
 <script>
-    var Itens = {Produtos: []};
-
-    var CodigoProduto = document.getElementById("ProdutoId");
-    var QuantidadeProduto = document.getElementById("QuantidadeProduto");
+    var Itens = { Produtos: [] };
     var ListaProdutos = document.getElementById("listaProdutos");
 
+    var CodigoProduto  = document.getElementById("ProdutoId");
+    var QuantidadeProduto = document.getElementById("QuantidadeProduto");
+    var TotalVenda = 0;
+
     function AdicionarProduto() {
-        var produtoId = CodigoProduto.options[CodigoProduto.selectedIndex].text;
+        var produtoId = CodigoProduto .value;
+        var nomeProduto = CodigoProduto .options[CodigoProduto .selectedIndex].text;
         var quantidade = QuantidadeProduto.value;
-        var precoUnitario = "1";
-        var total = (quantidade * precoUnitario).toFixed(2);
+        if (isNaN(quantidade) || quantidade <= 0) {
+            alert("Quantidade inválida, Digite um número maior que zero.");
+            return;
+        }
 
+        $.ajax({
+            url: '/Venda/GetPrecoProduto',
+            type: 'GET',
+            data: { id: produtoId },
+            success: function (response) {
+                var precoUnitario = response.preco.toFixed(2);
+                var total = (quantidade * precoUnitario).toFixed(2);
 
-        Itens.Produtos.push({
-            "CodigoProduto": produtoId,
-            "QuantidadeProduto": quantidade,
-            "PrecoUnitario": precoUnitario,
-            "Total": total
+                Itens.Produtos.push({
+                    "CodigoProduto ": nomeProduto,
+                    "QuantidadeProduto": quantidade,
+                    "PrecoUnitario": precoUnitario,
+                    "Total": total
 
-        });
+                });
 
-        var linhaProduto = `
+                TotalVenda = parseFloat(total);
+                document.getElementById("divTotal").innerHTML = TotalVenda.toFixed(2);
+                document.getElementById("TotalVenda").value = TotalVenda.toFixed(2);
+
+                var linhaProduto = `
             <tr>
-                <td class="text-center align-middle">${produtoId}</td>
+                <td class="text-center align-middle">${nomeProduto}</td>
                 <td class="text-center align-middle">${quantidade}</td>
-                <td class="text-center align-middle">${precoUnitario}</td>
-                <td class="text-center align-middle">${total}</td>
+                <td class="text-center align-middle">R$ ${precoUnitario}</td>
+                <td class="text-center align-middle">R$ ${total}</td>
                 <td class="text-center align-middle">
-                    <button type="button" class="btn btn-primary">Editar</button>
                     <button type="button" class="btn btn-danger">Excluir</button>
                 </td>
             </tr>`;
 
-        ListaProdutos.innerHTML += linhaProduto;
+                ListaProdutos.innerHTML += linhaProduto;
+            }
+        })
     }
 </script>
