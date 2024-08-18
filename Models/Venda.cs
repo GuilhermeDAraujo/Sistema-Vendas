@@ -21,6 +21,7 @@ namespace Projeto_Sistema_de_Vendas.Models
         public int ClienteId {get;set;}
         public Cliente Cliente {get;set;}
 
+        public string ListaProdutosJSON {get;set;}
         public ICollection<VendaProduto> VendaProdutos {get;set;}
 
     }

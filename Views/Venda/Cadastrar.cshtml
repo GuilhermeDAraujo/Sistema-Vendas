@@ -18,6 +18,10 @@
 
     <input type="hidden" id="TotalVenda" name="Total" value="0" />
 
+    @*Aqui está a lista na qual o JSON vai buscar os valores*@
+    @*É tipo hidden para ser "invisivel" para o usuario*@
+    <input type="hidden" id="listaProdutosJSON" name="ListaProdutosJSON"/>
+
     <div class="form-group ">
         <div class="row">
             <div class="col-md-4">
@@ -69,13 +73,17 @@
     var Itens = { Produtos: [] };
     var ListaProdutos = document.getElementById("listaProdutos");
 
+    //Criando a chamada do JSON com base no id listaProdutosJSON
+    var ListaProdutosJSON = document.getElementById("listaProdutosJSON");
+
     var CodigoProduto  = document.getElementById("ProdutoId");
     var QuantidadeProduto = document.getElementById("QuantidadeProduto");
     var TotalVenda = 0;
 
+
     function AdicionarProduto() {
-        var produtoId = CodigoProduto .value;
-        var nomeProduto = CodigoProduto .options[CodigoProduto .selectedIndex].text;
+        var produtoId = CodigoProduto.value;
+        var nomeProduto = CodigoProduto.options[CodigoProduto .selectedIndex].text;
         var quantidade = QuantidadeProduto.value;
         if (isNaN(quantidade) || quantidade <= 0) {
             alert("Quantidade inválida, Digite um número maior que zero.");
@@ -87,20 +95,25 @@
             type: 'GET',
             data: { id: produtoId },
             success: function (response) {
-                var precoUnitario = response.preco.toFixed(2);
-                var total = (quantidade * precoUnitario).toFixed(2);
+                var precoUnitario = response.preco;
+                var total = (quantidade * precoUnitario);
 
+                //JSON que será passado para a controller
+                //Os atributos entre " " deve estar igual ao da Model
+                //JSON passa os valores da tabela VendaProduto
                 Itens.Produtos.push({
-                    "CodigoProduto ": nomeProduto,
-                    "QuantidadeProduto": quantidade,
-                    "PrecoUnitario": precoUnitario,
-                    "Total": total
+                    "ProdutoId": parseInt(produtoId),
+                    "QuantidadeVendida": parseFloat(quantidade),
+                    "ValorProduto": parseFloat(precoUnitario),
 
                 });
+                 
+                //Aqui está a criacao do JSON que será enviado para a Controller
+                ListaProdutosJSON.value = JSON.stringify(Itens.Produtos);
 
-                TotalVenda = parseFloat(total);
-                document.getElementById("divTotal").innerHTML = TotalVenda.toFixed(2);
-                document.getElementById("TotalVenda").value = TotalVenda.toFixed(2);
+                TotalVenda += total;
+                document.getElementById("divTotal").innerHTML = TotalVenda.toFixed(2).replace('.',',');
+                document.getElementById("TotalVenda").value = TotalVenda.toString().replace('.',',');
 
                 var linhaProduto = `
             <tr>

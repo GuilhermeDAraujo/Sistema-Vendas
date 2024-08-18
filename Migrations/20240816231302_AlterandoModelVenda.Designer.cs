@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Projeto_Sistema_de_Vendas.Context;
 
@@ -11,9 +12,11 @@ using Projeto_Sistema_de_Vendas.Context;
 namespace Projeto_Sistema_de_Vendas.Migrations
 {
     [DbContext(typeof(SistemaVendaContext))]
-    partial class SistemaVendaContextModelSnapshot : ModelSnapshot
+    [Migration("20240816231302_AlterandoModelVenda")]
+    partial class AlterandoModelVenda
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -101,7 +104,7 @@ namespace Projeto_Sistema_de_Vendas.Migrations
                     b.Property<DateTime>("DataVenda")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ListaProdutosJSON")
+                    b.Property<string>("ListaJSON")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Total")
