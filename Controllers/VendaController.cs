@@ -28,6 +28,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
             var venda = _context.Vendas
             .Include(v => v.Vendedor)
             .Include(v => v.Cliente)
+            .OrderByDescending(v => v.DataVenda)
             .ToList();
             return View(venda);
         }

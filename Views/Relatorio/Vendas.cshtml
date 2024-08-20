@@ -1,0 +1,57 @@
+@model Projeto_Sistema_de_Vendas.Models.Relatorio
+
+
+<form asp-action="Vendas">
+    <div class="form-group">
+        <label><strong>Período</strong></label>
+        <input asp-for="DataDe" class="form-control" />
+    </div>
+    <br>
+    <div class="form-group">
+        <input asp-for="DataAte" class="form-control" />
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary w-100">Pesquisar</button>
+</form>
+
+<br>
+
+@if(Model.ListaVendas != null && Model.ListaVendas.Count > 0) @*Verifica se a lista é nula e se a lista tem + de 0 linha*@
+{
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="text-center align-middle">Data da Venda</th>
+            <th class="text-center align-middle">Total</th>
+            <th class="text-center align-middle">Vendedor</th>
+            <th class="text-center align-middle">Cliente</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListaVendas) @*Percorre cada item da ListaVendas que foi instanciada na controller*@
+        {
+            <tr>
+                <td class="text-center align-middle">
+                    @item.DataVenda.ToString("dd/MM/yyyy")
+                </td>
+                <td class="text-center align-middle">
+                    R$ @item.Total
+                </td>
+                <td class="text-center align-middle">
+                    @item.Vendedor?.Nome
+                </td>
+                <td class="text-center align-middle">
+                    @item.Cliente?.Nome
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+}
+else
+{
+    <p class="text-center text-primary" >Nenhuma venda encontrada para o período selecionado</p>
+}
+
+<br>
+<a asp-action="Index" class="btn btn-success w-100 mt-3">Voltar</a>
