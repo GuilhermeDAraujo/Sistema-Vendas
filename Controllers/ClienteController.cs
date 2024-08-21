@@ -1,10 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Projeto_Sistema_de_Vendas.Context;
 using Projeto_Sistema_de_Vendas.Models;
 
@@ -32,7 +26,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         [HttpPost]
         public IActionResult Cadastrar(Cliente cliente)
         {
-            if(ModelState.IsValid)
+            if(cliente != null && ModelState.IsValid)
             {
                 cliente.Senha = "12345";
                 _context.Clientes.Add(cliente);

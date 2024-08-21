@@ -12,7 +12,7 @@ namespace Projeto_Sistema_de_Vendas.Models
         public int Id {get;set;}
 
         [DataType(DataType.Date)]
-        public DateTime DataVenda {get;set;}
+        public DateTime DataVenda {get;set;} = DateTime.Now;
         public decimal Total {get;set;}
 
         public int VendedorId {get;set;}
@@ -21,8 +21,9 @@ namespace Projeto_Sistema_de_Vendas.Models
         public int ClienteId {get;set;}
         public Cliente Cliente {get;set;}
 
-        public string ListaProdutosJSON {get;set;}
-        public ICollection<VendaProduto> VendaProdutos {get;set;}
+        public List<VendaProduto> VendaProdutos {get;set;} = new List<VendaProduto>();
+        
 
+        public string ListaProdutosJSON {get;set;}
     }
 }

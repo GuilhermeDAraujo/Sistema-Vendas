@@ -1,4 +1,4 @@
-@model Projeto_Sistema_de_Vendas.Models.Relatorio
+@model Projeto_Sistema_de_Vendas.ViewModels.RelatorioVendasDataViewModel
 
 
 <form asp-action="Vendas">
@@ -16,7 +16,7 @@
 
 <br>
 
-@if(Model.ListaVendas != null && Model.ListaVendas.Count > 0) @*Verifica se a lista é nula e se a lista tem + de 0 linha*@
+@if(Model.ListaDeVendas != null && Model.ListaDeVendas.Count > 0) @*Verifica se a lista é nula e se a lista tem + de 0 linha*@
 {
 <table class="table table-bordered">
     <thead>
@@ -28,7 +28,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.ListaVendas) @*Percorre cada item da ListaVendas que foi instanciada na controller*@
+        @foreach (var item in Model.ListaDeVendas) @*Percorre cada item da ListaVendas que foi instanciada na controller*@
         {
             <tr>
                 <td class="text-center align-middle">

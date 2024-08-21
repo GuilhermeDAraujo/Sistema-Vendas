@@ -1,11 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Net.Http.Json;
 using System.Text.Json;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -35,13 +28,8 @@ namespace Projeto_Sistema_de_Vendas.Controllers
 
         public IActionResult Cadastrar()
         {
-            var model = new Venda
-            {
-                DataVenda = DateTime.Now
-            };
-
             CarregarViewBag();
-            return View(model);
+            return View();
         }
 
         [HttpPost]

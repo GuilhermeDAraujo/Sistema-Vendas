@@ -1,4 +1,4 @@
-@model Projeto_Sistema_de_Vendas.ViewModels.RelatorioVendedor
+@model Projeto_Sistema_de_Vendas.ViewModels.RelatorioPorVendedorViewModel
 
 
 <form asp-action="Vendedor">
@@ -12,7 +12,7 @@
 
 <br>
 
-@if (Model.ListaVendas != null && Model.ListaVendas.Any())
+@if (Model.ListaDeVendas != null && Model.ListaDeVendas.Any())
 {
     <table class="table table-bordered">
         <thead>
@@ -24,11 +24,11 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model.ListaVendas)
+            @foreach (var item in Model.ListaDeVendas)
             {
                 <tr>
                     <td class="text-center align-middle">
-                        @item.Vendedor.Nome        
+                        @item.Vendedor.Nome     
                     </td>
                     <td class="text-center align-middle">
                         @item.Cliente.Nome

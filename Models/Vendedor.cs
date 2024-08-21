@@ -17,6 +17,6 @@ namespace Projeto_Sistema_de_Vendas.Models
         public string Email {get;set;}
         public string Senha {get;set;}
 
-        public ICollection<Venda> Vendas {get;set;}
+        public List<Venda> Vendas {get;set;} = new List<Venda>();
     }
 }
