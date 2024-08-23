@@ -10,13 +10,20 @@ namespace Projeto_Sistema_de_Vendas.Models
     {
         public int Id {get;set;}
 
-        [Required(ErrorMessage = "Informe o Nome do Vendedor!")]
+        
+        [Required(ErrorMessage = "{0} Informe o Nome do Vendedor!")]
+        [StringLength(40, MinimumLength = 3, ErrorMessage ="O Tamanho do {0} deve conter entre {2} e {1} caracteres!")] //1 = Maior e 2 = Menor
         public string Nome {get;set;}
 
-        [Required(ErrorMessage = "Informe o E-mail do Vendedor!")]
+
+        [Required(ErrorMessage = "{0} Obrigatório!")]
+        [EmailAddress(ErrorMessage = "Informe um E-mail Válido!")]
+        [DataType(DataType.EmailAddress)]
         public string Email {get;set;}
+
+
         public string Senha {get;set;}
 
-        public List<Venda> Vendas {get;set;} = new List<Venda>();
+        public ICollection<Venda> Vendas {get;set;} = new List<Venda>();
     }
 }
