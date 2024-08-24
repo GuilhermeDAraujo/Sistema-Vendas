@@ -1,47 +1,50 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Projeto_Sistema_de_Vendas.Context;
 using Projeto_Sistema_de_Vendas.Models;
+using Projeto_Sistema_de_Vendas.Servicos;
 
 namespace Projeto_Sistema_de_Vendas.Controllers
 {
     public class VendedorController : Controller
     {
-        private readonly SistemaVendaContext _context;
+        private readonly VendedorServicos _vendedorServicos;
 
-        public VendedorController(SistemaVendaContext context)
+        public VendedorController(VendedorServicos vendedorServicos)
         {
-            _context = context;
+            _vendedorServicos = vendedorServicos;
         }
 
         public IActionResult Index()
         {
-            var vendedor = _context.Vendedores.ToList();
-            return View(vendedor);
+            return View(_vendedorServicos.EncontrarTodos());
         }
 
-        public IActionResult Cadastrar(int id)
+        public IActionResult Cadastrar()
         {
             return View();
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Cadastrar(Vendedor vendedor)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                vendedor.Senha = "12345";
-                _context.Vendedores.Add(vendedor);
-                _context.SaveChanges();
+                vendedor.Senha = "@Senha";
+                _vendedorServicos.Cadastrar(vendedor);
                 return RedirectToAction(nameof(Index));
             }
-            
+
             return View(vendedor);
         }
 
-        public IActionResult Editar(int id)
+        public IActionResult Editar(int? id)
         {
-            var vendedor = _context.Vendedores.Find(id);
+            if (id == null)
+                return RedirectToAction(nameof(Index));
 
+            var vendedor =_vendedorServicos.BuscarVendedor(id.Value);
             if(vendedor == null)
                 return RedirectToAction(nameof(Index));
             
@@ -49,39 +52,39 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Editar(Vendedor vendedor)
         {
-            var vendedorBanco = _context.Vendedores.Find(vendedor.Id);
+            if (ModelState.IsValid)
+            {
+                _vendedorServicos.Editar(vendedor);
+                return RedirectToAction(nameof(Index));
+            }
 
-            vendedorBanco.Nome = vendedor.Nome;
-            vendedorBanco.Email = vendedor.Email;
-
-            _context.Vendedores.Update(vendedorBanco);
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
+            return View(vendedor);
         }
 
-
-
-
-
-        public IActionResult Excluir(int id)
+        public IActionResult Excluir(int? id)
         {
-            var vendedor = _context.Vendedores.Find(id);
+            if(id == null)
+                return RedirectToAction(nameof(Index));
 
-            if(vendedor == null)
+            var vendedor = _vendedorServicos.BuscarVendedor(id.Value);
+            if (vendedor == null)
                 return RedirectToAction(nameof(Index));
 
             return View(vendedor);
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Excluir(Vendedor vendedor)
         {
-            var vendedorBanco = _context.Vendedores.Find(vendedor.Id);
-
-            _context.Vendedores.Remove(vendedorBanco);
-            _context.SaveChanges();
+            if (ModelState.IsValid)
+            {
+                _vendedorServicos.Excluir(vendedor);
+                
+            }
             return RedirectToAction(nameof(Index));
         }
     }

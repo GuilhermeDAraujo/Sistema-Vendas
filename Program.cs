@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 using Projeto_Sistema_de_Vendas.Context;
+using Projeto_Sistema_de_Vendas.Servicos;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +21,9 @@ builder.Services.AddSession(options =>
 });
 
 
+builder.Services.AddScoped<VendedorServicos>();
+
+//
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

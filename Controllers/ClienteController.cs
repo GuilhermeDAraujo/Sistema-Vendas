@@ -24,6 +24,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Cadastrar(Cliente cliente)
         {
             if(cliente != null && ModelState.IsValid)
@@ -49,6 +50,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Editar(Cliente cliente)
         {
             if(!ModelState.IsValid)
@@ -79,6 +81,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Excluir(Cliente cliente)
         {
             var clienteBanco = _context.Clientes.Find(cliente.Id);

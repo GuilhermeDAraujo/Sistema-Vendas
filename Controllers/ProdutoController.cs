@@ -26,6 +26,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Cadastrar(Produto produto)
         {
             if(ModelState.IsValid)
@@ -52,6 +53,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Editar(Produto produto)
         {
             if(!ModelState.IsValid)
@@ -87,6 +89,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Excluir(Produto produto)
         {
             var produtoBanco = _context.Produtos.Find(produto.Id);

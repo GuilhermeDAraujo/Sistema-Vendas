@@ -1,15 +1,15 @@
 @model IEnumerable<Projeto_Sistema_de_Vendas.Models.Vendedor>
 
 
-<h1>Vendedores Cadastrados</h1>
+<h2>@ViewData["Title"]</h2>
 
 
 
-<table class="table table-bordered">
+<table class="table table-bordered table-striped table-hover">
     <thead>
         <tr>
-            <th class="text-center align-middle">Nome do Vendedor</th>
-            <th class="text-center align-middle">E-mail</th>
+            <th class="text-center align-middle" @Html.DisplayNameFor(model => model.Nome)>Nome do Vendedor</th>
+            <th class="text-center align-middle" @Html.DisplayNameFor(model => model.Email)>E-mail</th>
             <th></th>
         </tr>
     </thead>

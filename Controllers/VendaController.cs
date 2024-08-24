@@ -33,6 +33,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Cadastrar(Venda venda)
         {
             if (venda != null)

@@ -40,6 +40,7 @@ public class HomeController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Login(LoginViewModel login)
     {
         if(ModelState.IsValid)

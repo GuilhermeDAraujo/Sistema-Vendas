@@ -26,6 +26,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Vendas(RelatorioVendasDataViewModel relatorio)
         {
             if (relatorio != null && ModelState.IsValid) //verifica se o objeto é não nulo e valido
@@ -47,6 +48,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Vendedor(RelatorioPorVendedorViewModel relatorio)
         {
             if (relatorio != null && ModelState.IsValid)
