@@ -26,3 +26,9 @@
         </form>
 </div>
 <a asp-action="Index" class="btn btn-success w-100 mt-3">Voltar</a>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

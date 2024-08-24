@@ -1,22 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
-using Projeto_Sistema_de_Vendas.Context;
 using Projeto_Sistema_de_Vendas.Models;
+using Projeto_Sistema_de_Vendas.Servicos;
 
 namespace Projeto_Sistema_de_Vendas.Controllers
 {
     public class ClienteController : Controller
     {
-        private readonly SistemaVendaContext _context;
+        private readonly ClienteServicos _clienteServicos;
 
-        public ClienteController(SistemaVendaContext context)
+        public ClienteController(ClienteServicos clienteServicos)
         {
-            _context = context;
+            _clienteServicos = clienteServicos;
         }
+
         public IActionResult Index()
         {
-            var cliente = _context.Clientes.ToList();
-            return View(cliente);
-        }    
+            return View(_clienteServicos.EncontrarTodos());
+        }
 
         public IActionResult Cadastrar()
         {
@@ -27,11 +27,9 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Cadastrar(Cliente cliente)
         {
-            if(cliente != null && ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                cliente.Senha = "12345";
-                _context.Clientes.Add(cliente);
-                _context.SaveChanges();
+                _clienteServicos.Cadastrar(cliente);
                 return RedirectToAction(nameof(Index));
             }
 
@@ -39,11 +37,13 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         }
 
 
-        public IActionResult Editar(int id)
+        public IActionResult Editar(int? id)
         {
-            var cliente = _context.Clientes.Find(id);
+            if (id == null)
+                return RedirectToAction(nameof(Index));
 
-            if(cliente == null)
+            var cliente = _clienteServicos.BuscarCliente(id.Value);
+            if (cliente == null)
                 return RedirectToAction(nameof(Index));
 
             return View(cliente);
@@ -53,28 +53,22 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Editar(Cliente cliente)
         {
-            if(!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return View(cliente);
+                _clienteServicos.Editar(cliente);
+                return RedirectToAction(nameof(Index));
             }
-            var clienteBanco = _context.Clientes.Find(cliente.Id);
 
-            clienteBanco.Nome = cliente.Nome;
-            clienteBanco.CpfCnpj = cliente.CpfCnpj;
-            clienteBanco.Email = cliente.Email;
-            clienteBanco.Senha = cliente.Senha;
-
-            _context.Clientes.Update(clienteBanco);
-            _context.SaveChanges();
-
-            return RedirectToAction(nameof(Index));
+            return View(cliente);
         }
 
-        public IActionResult Excluir(int id)
+        public IActionResult Excluir(int? id)
         {
-            var cliente = _context.Clientes.Find(id);
+            if (id == null)
+                return RedirectToAction(nameof(Index));
 
-            if(cliente == null)
+            var cliente = _clienteServicos.BuscarCliente(id.Value);
+            if (cliente == null)
                 return RedirectToAction(nameof(Index));
 
             return View(cliente);
@@ -84,11 +78,13 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Excluir(Cliente cliente)
         {
-            var clienteBanco = _context.Clientes.Find(cliente.Id);
-            
-            _context.Clientes.Remove(clienteBanco);
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
+            if (ModelState.IsValid)
+            {
+                _clienteServicos.Excluir(cliente);
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(cliente);
         }
     }
 }

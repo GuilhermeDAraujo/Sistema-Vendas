@@ -20,10 +20,10 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
-
-builder.Services.AddScoped<VendedorServicos>();
-
 //
+builder.Services.AddScoped<VendedorServicos>();
+builder.Services.AddScoped<ClienteServicos>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

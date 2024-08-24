@@ -1,4 +1,3 @@
-using System.Security.Cryptography;
 using Projeto_Sistema_de_Vendas.Context;
 using Projeto_Sistema_de_Vendas.Models;
 
@@ -20,8 +19,11 @@ namespace Projeto_Sistema_de_Vendas.Servicos
 
         public void Cadastrar(Vendedor vendedor)
         {
-            _context.Add(vendedor);
-            _context.SaveChanges();
+            if (vendedor != null)
+            {
+                _context.Add(vendedor);
+                _context.SaveChanges();
+            }
         }
 
         public Vendedor Editar(Vendedor vendedor)

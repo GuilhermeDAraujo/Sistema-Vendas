@@ -1,6 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Projeto_Sistema_de_Vendas.Context;
 using Projeto_Sistema_de_Vendas.Models;
 using Projeto_Sistema_de_Vendas.Servicos;
 
@@ -14,7 +12,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         {
             _vendedorServicos = vendedorServicos;
         }
-
+        
         public IActionResult Index()
         {
             return View(_vendedorServicos.EncontrarTodos());
