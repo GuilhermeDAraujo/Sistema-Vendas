@@ -1,0 +1,91 @@
+@model Projeto_Sistema_de_Vendas.Models.Venda
+
+<h1>Excluir Venda</h1>
+
+<form asp-action="Excluir" onsubmit="return confirmExluir();">
+    <div class="form-group">
+        <label asp-for="ClienteId" class="control-label"><strong>Cliente</strong></label>
+        <select asp-for="ClienteId" asp-items="@ViewBag.Cliente" class="form-control" readonly></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="VendedorId" class="control-label"><strong>Vendedor</strong></label>
+        <select asp-for="VendedorId" asp-items="@ViewBag.Vendedor" class="form-control" readonly></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="DataVenda" class="control-label"><strong>Data da Venda</strong></label>
+        <input asp-for="DataVenda" class="form-control" readonly />
+    </div>
+
+    <div class="form-group ">
+        <div class="row">
+            <div class="col-md-4">
+                <label for="ProdutoId" class="control-label"><strong>Produto</strong></label>
+                <input class="form-control" readonly></select>
+            </div>
+            <div class="col-md-4">
+                <label for="Quantidade" class="control-label"><strong>Quantidade</strong></label>
+                <input class="form-control" readonly />
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+                <button type="button" class="btn btn-primary w-100" onclick="AdicionarProduto()">Adicionar a
+                    Lista</button>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr>
+                <th class="text-center align-middle">Produto</th>
+                <th class="text-center align-middle">Quantidade</th>
+                <th class="text-center align-middle">Preço Unitário</th>
+                <th class="text-center align-middle">Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model.VendaProdutos)
+            {
+                <tr>
+                    <td class="text-center align-middle">
+                        @Html.DisplayFor(obj => item.Produto.Nome)
+                    </td>
+                    <td class="text-center align-middle">
+                        @Html.DisplayFor(obj => item.QuantidadeVendida)
+                    </td>
+                    <td class="text-center align-middle">
+                        R$ @Html.DisplayFor(obj => item.ValorProduto)
+                    </td>
+                    <td class="text-center align-middle">
+                        R$ @Html.DisplayFor(obj => item.Venda.Total)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+    <div style="float: right; font-size:22px; margin-left:5px;" id="total">0,00</div>
+    <div style="float: right; font-size:22px;">Total R$:</div>
+
+    <br>
+    <br>
+    <div class="form-group">
+        <input type="submit" value="Excluir" class="btn btn-danger w-100" readonly />
+    </div>
+</form>
+<a asp-action="Index" class="btn btn-success w-100 mt-3">Voltar</a>
+
+<script type="text/javascript">
+    function confirmExluir() {
+        var clienteNome = "@Model.Cliente.Nome";
+        var vendedorNome = "@Model.Vendedor.Nome";
+        var dataVenda = "@Model.DataVenda.ToString("dd/MM/yyyy")";
+        var total = "@Model.Total.ToString("C2")";
+
+        var mensagem = `Tem certeza que deseja excluir a venda: \nCliente: ${clienteNome} \nVendedor: ${vendedorNome} \nData da Venda: ${dataVenda} \nValor: ${total}`;
+        return confirm(mensagem);
+    }
+</script>

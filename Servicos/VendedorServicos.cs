@@ -23,6 +23,7 @@ namespace Projeto_Sistema_de_Vendas.Servicos
             {
                 _context.Add(vendedor);
                 _context.SaveChanges();
+
             }
         }
 

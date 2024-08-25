@@ -5,7 +5,7 @@
 <div class="row">
         <form asp-action="Cadastrar">
             <div class="form-group">
-                <label asp-for="Nome" class="control-label"><strong>Nome</strong></label>
+                <label asp-for="Nome" class="control-label"><strong>Nome do Produto</strong></label>
                 <span asp-validation-for="Nome" class="text-danger"></span>
                 <input asp-for="Nome" class="form-control" />
             </div>
@@ -17,12 +17,12 @@
             <div class="form-group">
                 <label asp-for="PrecoUnitario" class="control-label"><strong>Preço Unitário</strong></label>
                 <span asp-validation-for="PrecoUnitario" class="text-danger"></span>
-                <input asp-for="PrecoUnitario" class="form-control formatarValorDecimal" value="0,00"/>
+                <input asp-for="PrecoUnitario" class="form-control" value="0.0"/>
             </div>
             <div class="form-group">
                 <label asp-for="QuantidadeEmEstoque" class="control-label"><strong>Quantidade em Estoque</strong></label>
                 <span asp-validation-for="QuantidadeEmEstoque" class="text-danger"></span>
-                <input asp-for="QuantidadeEmEstoque" class="form-control formatarValorDecimal" value="0,00"/>
+                <input asp-for="QuantidadeEmEstoque" class="form-control" value="0.0"/>
             </div>
             <div class="form-group">
                 <label asp-for="UnidadeDeMedidaProduto" class="control-label"><strong>Unidade de Medida</strong></label>
@@ -42,21 +42,6 @@
 </div>
 <a asp-action="Index" class="btn btn-success w-100 mt-3">Voltar</a>
 
-@section Scripts{
-    <script>
-        $(document).ready(function(){
-            $('.formatarValorDecimal').on('input', function() {
-                let value = $(this).val().replace(/\D/g, '');
-                if(value.length > 2){
-                    let formattedValue = value.slice(0, -2) + ',' + value.slice(-2);
-                    $(this).val(formattedValue);
-                } else {
-                    $(this).val(value);
-                }
-            });
-        });
-    </script>
-}
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

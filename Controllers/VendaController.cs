@@ -1,29 +1,22 @@
-using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Projeto_Sistema_de_Vendas.Context;
 using Projeto_Sistema_de_Vendas.Models;
+using Projeto_Sistema_de_Vendas.Servicos;
 
 namespace Projeto_Sistema_de_Vendas.Controllers
 {
     public class VendaController : Controller
     {
-        private readonly SistemaVendaContext _context;
+        private readonly VendaServicos _vendaServicos;
 
-        public VendaController(SistemaVendaContext context)
+        public VendaController(VendaServicos vendaServicos)
         {
-            _context = context;
+            _vendaServicos = vendaServicos;
         }
 
         public IActionResult Index()
         {
-            var venda = _context.Vendas
-            .Include(v => v.Vendedor)
-            .Include(v => v.Cliente)
-            .OrderByDescending(v => v.DataVenda)
-            .ToList();
-            return View(venda);
+            return View(_vendaServicos.EncontrarTodasVendas());
         }
 
         public IActionResult Cadastrar()
@@ -36,46 +29,47 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Cadastrar(Venda venda)
         {
-            if (venda != null)
+            if (ModelState.IsValid)
             {
-                if (ModelState.IsValid)
-                {
-                    //Deserializa o Json enviado pela View, onde busco ele na minha Model Venda - ListaJSON
-                    var listaProduto = JsonSerializer.Deserialize<ICollection<VendaProduto>>(venda.ListaProdutosJSON);
-
-                    _context.Vendas.Add(venda);
-                    _context.SaveChanges();
-
-                    //Aqui o laço vai percerrer todos os itens da listaProduto(JSON), que já foi deserializada
-                    foreach (var item in listaProduto)
-                    {
-                        //Aqui atribuo o Id da venda para a listaProduto(JSON) que veio sem o Id da venda, o Id veio do objeto venda que foi passado como parâmetro
-                        item.VendaId = venda.Id;
-
-                        //Adiciono os atributos na tabela VendaProduto
-                        _context.VendaProdutos.Add(item);
-                    }
-
-                    _context.SaveChanges();
-
-                    return RedirectToAction(nameof(Index));
-                }
+                _vendaServicos.Cadastrar(venda);
+                return RedirectToAction(nameof(Index));
             }
 
             CarregarViewBag();
             return View(venda);
         }
 
+        public IActionResult Excluir(int? id)
+        {
+            if (id == null)
+                return RedirectToAction(nameof(Index));
+
+            var venda = _vendaServicos.EncontrarVenda(id.Value);
+            if (venda == null)
+                return RedirectToAction(nameof(Index));
+
+            CarregarViewBag();
+            return View(venda);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Excluir(Venda venda)
+        {
+            _vendaServicos.Excluir(venda);
+            return RedirectToAction(nameof(Index));
+        }
+
         public void CarregarViewBag()
         {
-            ViewBag.Cliente = new SelectList(_context.Clientes.ToList(), "Id", "Nome");
-            ViewBag.Vendedor = new SelectList(_context.Vendedores.ToList(), "Id", "Nome");
-            ViewBag.Produto = new SelectList(_context.Produtos.ToList(), "Id", "Nome");
+            ViewBag.Cliente = new SelectList(_vendaServicos.EncontrarTodosClientes(), "Id", "Nome");
+            ViewBag.Vendedor = new SelectList(_vendaServicos.EncontrarTodosVendedores(), "Id", "Nome");
+            ViewBag.Produto = new SelectList(_vendaServicos.EncontrarTodosProdutos(), "Id", "Nome");
         }
 
         public JsonResult GetPrecoProduto(int id)
         {
-            var produto = _context.Produtos.Find(id);
+            var produto = _vendaServicos.EncontrarProduto(id);
             if (produto != null)
             {
                 return Json(new { preco = produto.PrecoUnitario });

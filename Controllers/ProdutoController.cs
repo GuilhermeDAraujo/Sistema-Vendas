@@ -1,22 +1,21 @@
 using Microsoft.AspNetCore.Mvc;
-using Projeto_Sistema_de_Vendas.Context;
 using Projeto_Sistema_de_Vendas.Models;
+using Projeto_Sistema_de_Vendas.Servicos;
 
 namespace Projeto_Sistema_de_Vendas.Controllers
 {
     public class ProdutoController : Controller
     {
-        private readonly SistemaVendaContext _context;
+        private readonly ProdutoServicos _produtoServico;
 
-        public ProdutoController(SistemaVendaContext context)
-        {   
-            _context = context;
+        public ProdutoController(ProdutoServicos produtoServico)
+        {
+            _produtoServico = produtoServico;
         }
 
         public IActionResult Index()
         {
-            var produto = _context.Produtos.ToList();
-            return View(produto);
+            return View(_produtoServico.EncontrarTodos());
         }
 
         public IActionResult Cadastrar()
@@ -29,25 +28,26 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Cadastrar(Produto produto)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                _context.Produtos.Add(produto);
-                _context.SaveChanges();
+                _produtoServico.Cadastrar(produto);
                 return RedirectToAction(nameof(Index));
             }
 
             ViewBag.UnidadeDeMedidaProduto = Produto.GetUnidadeDeMedidaOpcoes();
-
             return View(produto);
         }
 
-        public IActionResult Editar(int id)
+        public IActionResult Editar(int? id)
         {
-            var produto = _context.Produtos.Find(id);
-
-            if(produto == null)
+            if (id == null)
                 return RedirectToAction(nameof(Index));
-            
+
+
+            var produto = _produtoServico.BuscarProduto(id.Value);
+            if (produto == null)
+                return RedirectToAction(nameof(Index));
+
             ViewBag.UnidadeDeMedidaProduto = Produto.GetUnidadeDeMedidaOpcoes();
             return View(produto);
         }
@@ -56,32 +56,23 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Editar(Produto produto)
         {
-            if(!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                ViewBag.UnidadeDeMedidaProduto = Produto.GetUnidadeDeMedidaOpcoes();
-                return View(produto);
+                _produtoServico.Editar(produto);
+                return RedirectToAction(nameof(Index));
             }
 
-            var produtoBanco = _context.Produtos.Find(produto.Id);
-            
-            produtoBanco.Nome = produto.Nome;
-            produtoBanco.Descricao = produto.Descricao;
-            produtoBanco.PrecoUnitario = produto.PrecoUnitario;
-            produtoBanco.QuantidadeEmEstoque = produto.QuantidadeEmEstoque;
-            produtoBanco.UnidadeDeMedidaProduto = produto.UnidadeDeMedidaProduto;
-            produtoBanco.Foto = produto.Foto;
-
-            _context.Produtos.Update(produtoBanco);
-            _context.SaveChanges();
-
-            return RedirectToAction(nameof(Index));
+            ViewBag.UnidadeDeMedidaProduto = Produto.GetUnidadeDeMedidaOpcoes();
+            return View(produto);
         }
 
-        public IActionResult Excluir(int id)
+        public IActionResult Excluir(int? id)
         {
-            var produto = _context.Produtos.Find(id);
+            if(id == null)
+                return RedirectToAction(nameof(Index));
 
-            if(produto == null)
+            var produto = _produtoServico.BuscarProduto(id.Value);
+            if (produto == null)
                 return RedirectToAction(nameof(Index));
 
             ViewBag.UnidadeDeMedidaProduto = Produto.GetUnidadeDeMedidaOpcoes();
@@ -92,12 +83,13 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Excluir(Produto produto)
         {
-            var produtoBanco = _context.Produtos.Find(produto.Id);
+            if(ModelState.IsValid)
+            {
+                _produtoServico.Excluir(produto);
+                return RedirectToAction(nameof(Index));
+            }
 
-            _context.Produtos.Remove(produtoBanco);
-            _context.SaveChanges();
-
-            return RedirectToAction(nameof(Index));
+            return View(produto);
         }
     }
 }

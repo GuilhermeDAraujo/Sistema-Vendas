@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\images\\configuracoes.png"
     },
     {
+      "Id": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\fundo.png",
+      "PackagePath": "staticwebassets\\images\\fundo.png"
+    },
+    {
       "Id": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\produtos.png",
       "PackagePath": "staticwebassets\\images\\produtos.png"
     },

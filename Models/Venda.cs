@@ -1,29 +1,30 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc.Rendering;
+
 
 namespace Projeto_Sistema_de_Vendas.Models
 {
     public class Venda
     {
-        public int Id {get;set;}
+        public int Id { get; set; }
 
+        [Required(ErrorMessage = "Informe a Data da realização da Venda!")]
         [DataType(DataType.Date)]
-        public DateTime DataVenda {get;set;} = DateTime.Now;
-        public decimal Total {get;set;}
+        public DateTime DataVenda { get; set; } = DateTime.Now;
 
-        public int VendedorId {get;set;}
-        public Vendedor Vendedor {get;set;}
 
-        public int ClienteId {get;set;}
-        public Cliente Cliente {get;set;}
+        [DisplayFormat(DataFormatString = "{0:F2}")]
+        public decimal Total { get; set; }
 
-        public List<VendaProduto> VendaProdutos {get;set;} = new List<VendaProduto>();
+        public int VendedorId { get; set; }
+        public Vendedor Vendedor { get; set; }
+
+        public int ClienteId { get; set; }
+        public Cliente Cliente { get; set; }
+
+        public List<VendaProduto> VendaProdutos { get; set; } = new List<VendaProduto>();
         
 
-        public string ListaProdutosJSON {get;set;}
+        [Required(ErrorMessage = "É necessário adicionar um produto a venda!")]
+        public string ListaProdutosJSON { get; set; }
     }
 }

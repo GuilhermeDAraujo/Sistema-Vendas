@@ -15,7 +15,7 @@ builder.Services.AddHttpContextAccessor();
 //Session para o Login
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(30); // Define o tempo de expiração da sessão
+    options.IdleTimeout = TimeSpan.FromMinutes(15); // Define o tempo de expiração da sessão
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
@@ -23,6 +23,8 @@ builder.Services.AddSession(options =>
 //
 builder.Services.AddScoped<VendedorServicos>();
 builder.Services.AddScoped<ClienteServicos>();
+builder.Services.AddScoped<ProdutoServicos>();
+builder.Services.AddScoped<VendaServicos>();
 
 var app = builder.Build();
 

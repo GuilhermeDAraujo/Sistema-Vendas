@@ -12,20 +12,25 @@ namespace Projeto_Sistema_de_Vendas.Models
         public int Id {get;set;}
 
         [Required(ErrorMessage = "Informe o Nome do Produto!")]
+        [StringLength(15, MinimumLength = 4, ErrorMessage ="O Tamanho do {0} deve conter entre {2} e {1} caracteres!")] //1 = Maior e 2 = Menor
         public string Nome {get;set;}
 
 
         [Required(ErrorMessage = "Informe a Descrição!")]
+        [StringLength(50, ErrorMessage ="O Tamanho do {0} deve conter no maxímo {1} caracteres!")]
         public string Descricao {get;set;}
 
 
         [Required(ErrorMessage = "Informe o Valor Unitário!")]
-        [Range(0, double.MaxValue, ErrorMessage = "Valor Não Pode Ser Negativo!")]
+        [Range(0, double.MaxValue, ErrorMessage = "Valor Não Pode Ser Negativa")]
+        [RegularExpression(@"^\d+(\.\d{1,2})?$", ErrorMessage ="Utilize o ponto como separador decimal")]
+        [DisplayFormat(DataFormatString = "{0:F2}")]
         public decimal? PrecoUnitario {get;set;}
 
 
         [Required(ErrorMessage = "Informe a Quantidade!")]
         [Range(0, double.MaxValue, ErrorMessage = "Quantidade Não Pode Ser Negativa")]
+        [RegularExpression(@"^\d+(\.\d{1,2})?$", ErrorMessage ="Utilize o ponto como separador decimal")]
         public decimal? QuantidadeEmEstoque {get;set;}
 
 
@@ -36,7 +41,7 @@ namespace Projeto_Sistema_de_Vendas.Models
         [Required(ErrorMessage = "Informe o Link da Foto")]
         public string Foto {get;set;}
 
-        public ICollection<VendaProduto> VendaProdutos {get;set;}
+        public ICollection<VendaProduto> VendaProdutos {get;set;} = new List<VendaProduto>();
         
 
         public static IEnumerable<SelectListItem> GetUnidadeDeMedidaOpcoes()
