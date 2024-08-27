@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Projeto_Sistema_de_Vendas.Context;
 using Projeto_Sistema_de_Vendas.Models;
 
@@ -12,45 +13,45 @@ namespace Projeto_Sistema_de_Vendas.Servicos
             _context = context;
         }
 
-        public List<Cliente> EncontrarTodos()
+        public async Task <List<Cliente>> EncontrarTodosAsync()
         {
-            return _context.Clientes.ToList();
+            return await _context.Clientes.OrderBy(x => x.Nome).ToListAsync();
         }
 
-        public void Cadastrar(Cliente cliente)
+        public async Task CadastrarAsync(Cliente cliente)
         {
             if (cliente != null)
             {
                 _context.Clientes.Add(cliente);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
         }
 
-        public Cliente Editar(Cliente cliente)
+        public async Task<Cliente> EditarAsync(Cliente cliente)
         {
             if(_context.Clientes.Any(c => c.Id == cliente.Id))
             {
                 _context.Update(cliente);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
 
             return cliente;
         }
 
-        public Cliente Excluir(Cliente cliente)
+        public async Task<Cliente> ExcluirAsync(Cliente cliente)
         {
             if(_context.Clientes.Any(c => c.Id == cliente.Id))
             {
                 _context.Remove(cliente);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
 
             return cliente;
         }
 
-        public Cliente BuscarCliente(int id)
+        public async Task<Cliente> BuscarClienteAsync(int id)
         {
-            return _context.Clientes.Find(id);
+            return await _context.Clientes.FindAsync(id);
         }
     }
 }

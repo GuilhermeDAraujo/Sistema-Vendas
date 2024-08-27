@@ -17,10 +17,10 @@ namespace Projeto_Sistema_de_Vendas.Models
         [DataType(DataType.EmailAddress)]
         public string Email {get;set;}
 
-        // [Required(ErrorMessage = "A {0} é Obrigatória!")]
-        // [StringLength(15, MinimumLength = 6, ErrorMessage ="O Tamanho do {0} deve conter entre {2} e {1} caracteres!")]  
+        [Required(ErrorMessage = "A {0} é Obrigatória!")]
+        [StringLength(15, MinimumLength = 6, ErrorMessage ="O Tamanho do {0} deve conter entre {2} e {1} caracteres!")]  
         // [RegularExpression(@"^(?=.*[A-Z])(?=.*\W).+$", ErrorMessage ="A {0} deve conter letra maiúscula e caractere especial!!")]
-        public string Senha {get;set;}
+        public string Senha {get;set;} = "@Senha";
 
         public ICollection<Venda> Vendas {get;set;} = new List<Venda>();
     }

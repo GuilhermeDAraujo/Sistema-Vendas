@@ -28,7 +28,8 @@
         <div class="row">
             <div class="col-md-4">
                 <label for="ProdutoId" class="control-label"><strong>Produto</strong></label>
-                <span asp-validation-for="ListaProdutosJSON" class="text-danger" style="margin-bottom: 20px;"></span> @*Validação da lista, se nao houver produto vai mostrar a mensagem*@
+                <span asp-validation-for="ListaProdutosJSON" class="text-danger" style="margin-bottom: 20px;"></span>
+                @*Validação da lista, se nao houver produto vai mostrar a mensagem*@
                 <select id="ProdutoId" name="ProdutoId" asp-items="@ViewBag.Produto" class="form-control"></select>
             </div>
             <div class="col-md-4">
@@ -101,20 +102,31 @@
                 var precoUnitario = response.preco;
                 var total = (quantidade * precoUnitario);
 
-                //JSON que será passado para a controller
-                //Os atributos entre " " deve estar igual ao da Model
-                //JSON passa os valores da tabela VendaProduto
-                Itens.Produtos.push({
-                    "ProdutoId": parseInt(produtoId),
-                    "QuantidadeVendida": parseFloat(quantidade),
-                    "ValorProduto": parseFloat(precoUnitario),
+                var produtoExiste = Itens.Produtos.find(p => p.ProdutoId === parseInt(produtoId));
 
-                });
+                if (produtoExiste) {
+
+                    TotalVenda -= (produtoExiste.QuantidadeProduto * produtoExiste.ValorProduto);
+                    produtoExiste.QuantidadeVendida += parseFloat(quantidade);
+                    produtoExiste.ValorProduto = precoUnitario;
+                }
+                else {
+
+                    //JSON que será passado para a controller
+                    //Os atributos entre " " deve estar igual ao da Model
+                    //JSON passa os valores da tabela VendaProduto
+                    Itens.Produtos.push({
+                        "ProdutoId": parseInt(produtoId),
+                        "QuantidadeVendida": parseFloat(quantidade),
+                        "ValorProduto": parseFloat(precoUnitario),
+
+                    });
+                }
 
                 //Aqui está a criacao do JSON que será enviado para a Controller
                 ListaProdutosJSON.value = JSON.stringify(Itens.Produtos);
 
-                TotalVenda += total;
+                TotalVenda = Itens.Produtos.reduce((acc, item) => acc + (item.QuantidadeVendida * item.ValorProduto), 0)
                 document.getElementById("divTotal").innerHTML = TotalVenda.toFixed(2).replace('.', ',');
                 document.getElementById("TotalVenda").value = TotalVenda.toString().replace('.', ',');
 
@@ -133,6 +145,19 @@
             }
         })
     }
+
+    @* function RemoverProduto(produtoId){
+        Itens.Produtos = Itens.Produtos.filter(p => p.ProdutoId !=== produtoId);
+
+        ListaProdutosJSON.value = JSON.stringify(Itens.Produtos);
+
+        TotalVenda = Itens.Produtos.reduce((acc, item) => acc + (item.QuantidadeVendida * item.ValorProduto), 0);
+        document.getElementById("divTotal").innerHTML = TotalVenda.toFixed(2).replace('.',',');
+        document.getElementById("TotalVenda").value = TotalVenda.toString().replace('.',',');
+
+        AtualizarTabelaProdutos();
+    } *@
+
 </script>
 
 @section Scripts {

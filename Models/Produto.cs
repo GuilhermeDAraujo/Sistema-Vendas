@@ -12,7 +12,7 @@ namespace Projeto_Sistema_de_Vendas.Models
         public int Id {get;set;}
 
         [Required(ErrorMessage = "Informe o Nome do Produto!")]
-        [StringLength(15, MinimumLength = 4, ErrorMessage ="O Tamanho do {0} deve conter entre {2} e {1} caracteres!")] //1 = Maior e 2 = Menor
+        [StringLength(30, MinimumLength = 4, ErrorMessage ="O Tamanho do {0} deve conter entre {2} e {1} caracteres!")] //1 = Maior e 2 = Menor
         public string Nome {get;set;}
 
 

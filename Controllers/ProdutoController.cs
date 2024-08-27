@@ -68,7 +68,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
 
         public IActionResult Excluir(int? id)
         {
-            if(id == null)
+            if (id == null)
                 return RedirectToAction(nameof(Index));
 
             var produto = _produtoServico.BuscarProduto(id.Value);
@@ -83,13 +83,8 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Excluir(Produto produto)
         {
-            if(ModelState.IsValid)
-            {
-                _produtoServico.Excluir(produto);
-                return RedirectToAction(nameof(Index));
-            }
-
-            return View(produto);
+            _produtoServico.Excluir(produto);
+            return RedirectToAction(nameof(Index));
         }
     }
 }

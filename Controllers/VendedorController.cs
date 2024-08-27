@@ -12,7 +12,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         {
             _vendedorServicos = vendedorServicos;
         }
-        
+
         public IActionResult Index()
         {
             return View(_vendedorServicos.EncontrarTodos());
@@ -29,7 +29,6 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         {
             if (ModelState.IsValid)
             {
-                vendedor.Senha = "@Senha";
                 _vendedorServicos.Cadastrar(vendedor);
                 return RedirectToAction(nameof(Index));
             }
@@ -42,10 +41,10 @@ namespace Projeto_Sistema_de_Vendas.Controllers
             if (id == null)
                 return RedirectToAction(nameof(Index));
 
-            var vendedor =_vendedorServicos.BuscarVendedor(id.Value);
-            if(vendedor == null)
+            var vendedor = _vendedorServicos.BuscarVendedor(id.Value);
+            if (vendedor == null)
                 return RedirectToAction(nameof(Index));
-            
+
             return View(vendedor);
         }
 
@@ -64,7 +63,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
 
         public IActionResult Excluir(int? id)
         {
-            if(id == null)
+            if (id == null)
                 return RedirectToAction(nameof(Index));
 
             var vendedor = _vendedorServicos.BuscarVendedor(id.Value);
@@ -78,11 +77,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Excluir(Vendedor vendedor)
         {
-            if (ModelState.IsValid)
-            {
-                _vendedorServicos.Excluir(vendedor);
-                
-            }
+            _vendedorServicos.Excluir(vendedor);
             return RedirectToAction(nameof(Index));
         }
     }
