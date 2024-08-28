@@ -13,9 +13,9 @@ namespace Projeto_Sistema_de_Vendas.Controllers
             _produtoServico = produtoServico;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View(_produtoServico.EncontrarTodos());
+            return View(await _produtoServico.EncontrarTodosAsync());
         }
 
         public IActionResult Cadastrar()
@@ -26,11 +26,11 @@ namespace Projeto_Sistema_de_Vendas.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Cadastrar(Produto produto)
+        public async Task<IActionResult> Cadastrar(Produto produto)
         {
             if (ModelState.IsValid)
             {
-                _produtoServico.Cadastrar(produto);
+                await _produtoServico.CadastrarAsync(produto);
                 return RedirectToAction(nameof(Index));
             }
 
@@ -38,13 +38,13 @@ namespace Projeto_Sistema_de_Vendas.Controllers
             return View(produto);
         }
 
-        public IActionResult Editar(int? id)
+        public async Task<IActionResult> Editar(int? id)
         {
             if (id == null)
                 return RedirectToAction(nameof(Index));
 
 
-            var produto = _produtoServico.BuscarProduto(id.Value);
+            var produto = await _produtoServico.BuscarProdutoAsync(id.Value);
             if (produto == null)
                 return RedirectToAction(nameof(Index));
 
@@ -54,11 +54,11 @@ namespace Projeto_Sistema_de_Vendas.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Editar(Produto produto)
+        public async Task<IActionResult> Editar(Produto produto)
         {
             if (ModelState.IsValid)
             {
-                _produtoServico.Editar(produto);
+                await _produtoServico.EditarAsync(produto);
                 return RedirectToAction(nameof(Index));
             }
 
@@ -66,12 +66,12 @@ namespace Projeto_Sistema_de_Vendas.Controllers
             return View(produto);
         }
 
-        public IActionResult Excluir(int? id)
+        public async Task<IActionResult> Excluir(int? id)
         {
             if (id == null)
                 return RedirectToAction(nameof(Index));
 
-            var produto = _produtoServico.BuscarProduto(id.Value);
+            var produto = await _produtoServico.BuscarProdutoAsync(id.Value);
             if (produto == null)
                 return RedirectToAction(nameof(Index));
 
@@ -81,9 +81,9 @@ namespace Projeto_Sistema_de_Vendas.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Excluir(Produto produto)
+        public async Task<IActionResult> Excluir(Produto produto)
         {
-            _produtoServico.Excluir(produto);
+            await _produtoServico.ExcluirAsync(produto);
             return RedirectToAction(nameof(Index));
         }
     }

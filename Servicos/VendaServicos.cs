@@ -14,16 +14,16 @@ namespace Projeto_Sistema_de_Vendas.Servicos
             _context = context;
         }
 
-        public List<Venda> EncontrarTodasVendas()
+        public async Task<List<Venda>> EncontrarTodasVendasAsync()
         {
-            return _context.Vendas
+            return await _context.Vendas
             .Include(v => v.Vendedor)
             .Include(v => v.Cliente)
             .OrderByDescending(v => v.DataVenda)
-            .ToList();
+            .ToListAsync();
         }
 
-        public Venda Cadastrar(Venda venda)
+        public async Task<Venda> CadastrarAsync(Venda venda)
         {
             if (venda != null)
             {
@@ -31,55 +31,55 @@ namespace Projeto_Sistema_de_Vendas.Servicos
                 var listaProduto = JsonSerializer.Deserialize<ICollection<VendaProduto>>(venda.ListaProdutosJSON);
 
                 _context.Vendas.Add(venda);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
                 foreach (var item in listaProduto) //Aqui o laço vai percerrer todos os itens da listaProduto(JSON), que já foi deserializada
                 {
                     item.VendaId = venda.Id; //Aqui atribuo o Id da venda para a listaProduto(JSON) que veio sem o Id da venda, o Id veio do objeto venda que foi passado como parâmetro
                     _context.VendaProdutos.Add(item); //Adiciono os atributos na tabela VendaProduto
                 }
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
             return venda;
         }
 
-        public Venda Excluir(Venda venda)
+        public async Task<Venda> ExcluirAsync(Venda venda)
         {
             if(_context.Vendas.Any(v => v.Id == venda.Id))
             {
                 _context.Remove(venda);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
             return venda;
         }
 
-        public List<Cliente> EncontrarTodosClientes()
+        public async Task<List<Cliente>> EncontrarTodosClientesAsync()
         {
-            return _context.Clientes.ToList();
+            return await _context.Clientes.ToListAsync();
         }
 
-        public List<Vendedor> EncontrarTodosVendedores()
+        public async Task<List<Vendedor>> EncontrarTodosVendedoresAsync()
         {
-            return _context.Vendedores.ToList();
+            return await _context.Vendedores.ToListAsync();
         }
 
-        public List<Produto> EncontrarTodosProdutos()
+        public async Task<List<Produto>> EncontrarTodosProdutosAsync()
         {
-            return _context.Produtos.ToList();
+            return await _context.Produtos.ToListAsync();
         }
 
-        public Venda EncontrarVenda(int id)
+        public async Task<Venda> EncontrarVendaAsync(int id)
         {
-            return _context.Vendas
+            return await _context.Vendas
             .Include(v => v.Cliente)
             .Include(v => v.Vendedor)
             .Include(vp => vp.VendaProdutos)
                 .ThenInclude(p => p.Produto)
-            .FirstOrDefault(v => v.Id == id);
+            .FirstOrDefaultAsync(v => v.Id == id);
         }
 
-        public Produto EncontrarProduto(int id)
+        public async Task<Produto> EncontrarProdutoAsync(int id)
         {
-            return _context.Produtos.Find(id);
+            return await _context.Produtos.FindAsync(id);
         }
     }
 }

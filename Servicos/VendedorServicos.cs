@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Projeto_Sistema_de_Vendas.Context;
 using Projeto_Sistema_de_Vendas.Models;
 
@@ -12,46 +13,46 @@ namespace Projeto_Sistema_de_Vendas.Servicos
             _context = context;
         }
 
-        public List<Vendedor> EncontrarTodos()
+        public async Task<List<Vendedor>> EncontrarTodosAsync()
         {
-            return _context.Vendedores.ToList();
+            return await _context.Vendedores.ToListAsync();
         }
 
-        public void Cadastrar(Vendedor vendedor)
+        public async Task CadastrarAsync(Vendedor vendedor)
         {
             if (vendedor != null)
             {
                 _context.Add(vendedor);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
 
             }
         }
 
-        public Vendedor Editar(Vendedor vendedor)
+        public async Task<Vendedor> EditarAsyn(Vendedor vendedor)
         {
             if (_context.Vendedores.Any(v => v.Id == vendedor.Id))
             {
                 _context.Update(vendedor);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
 
             return vendedor;
         }
 
-        public Vendedor Excluir(Vendedor vendedor)
+        public async Task<Vendedor> ExcluirAsync(Vendedor vendedor)
         {
             if (_context.Vendedores.Any(v => v.Id == vendedor.Id))
             {
                 _context.Remove(vendedor);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
 
             return vendedor;
         }
 
-        public Vendedor BuscarVendedor(int id)
+        public async Task<Vendedor> BuscarVendedorAsync(int id)
         {
-            return _context.Vendedores.Find(id);
+            return await _context.Vendedores.FindAsync(id);
         }
     }
 }

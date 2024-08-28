@@ -15,7 +15,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
 
         public async Task<IActionResult> Index()
         {
-            return  View(await _clienteServicos.EncontrarTodosAsync());
+            return View(await _clienteServicos.EncontrarTodosAsync());
         }
 
         public IActionResult Cadastrar()

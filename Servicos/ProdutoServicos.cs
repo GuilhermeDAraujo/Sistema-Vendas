@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Projeto_Sistema_de_Vendas.Context;
 using Projeto_Sistema_de_Vendas.Models;
 
@@ -12,45 +13,45 @@ namespace Projeto_Sistema_de_Vendas.Servicos
             _context = context;
         }
 
-        public List<Produto> EncontrarTodos()
+        public async Task<List<Produto>> EncontrarTodosAsync()
         {
-            return _context.Produtos.ToList();
+            return await _context.Produtos.OrderBy(p => p.Nome).ToListAsync();
         }
 
-        public void Cadastrar(Produto produto)
+        public async Task CadastrarAsync(Produto produto)
         {
             if (produto != null)
             {
                 _context.Produtos.Add(produto);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync ();
             }
         }
 
-        public Produto Editar(Produto produto)
+        public async Task<Produto> EditarAsync(Produto produto)
         {
             if (_context.Produtos.Any(p => p.Id == produto.Id))
             {
                 _context.Update(produto);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
 
             return produto;
         }
 
-        public Produto Excluir(Produto produto)
+        public async Task<Produto> ExcluirAsync(Produto produto)
         {
             if (_context.Produtos.Any(p => p.Id == produto.Id))
             {
                 _context.Remove(produto);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
 
             return produto;
         }
 
-        public Produto BuscarProduto(int id)
+        public async Task<Produto> BuscarProdutoAsync(int id)
         {
-            return _context.Produtos.Find(id);
+            return await _context.Produtos.FindAsync(id);
         }
     }
 }

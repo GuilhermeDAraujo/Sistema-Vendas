@@ -13,7 +13,7 @@ namespace Projeto_Sistema_de_Vendas.Servicos
             _context = context;
         }
 
-        public async Task <List<Cliente>> EncontrarTodosAsync()
+        public async Task<List<Cliente>> EncontrarTodosAsync()
         {
             return await _context.Clientes.OrderBy(x => x.Nome).ToListAsync();
         }

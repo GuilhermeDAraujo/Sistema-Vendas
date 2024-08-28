@@ -13,9 +13,9 @@ namespace Projeto_Sistema_de_Vendas.Controllers
             _vendedorServicos = vendedorServicos;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View(_vendedorServicos.EncontrarTodos());
+            return View(await _vendedorServicos.EncontrarTodosAsync());
         }
 
         public IActionResult Cadastrar()
@@ -25,23 +25,23 @@ namespace Projeto_Sistema_de_Vendas.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Cadastrar(Vendedor vendedor)
+        public async Task<IActionResult> Cadastrar(Vendedor vendedor)
         {
             if (ModelState.IsValid)
             {
-                _vendedorServicos.Cadastrar(vendedor);
+                await _vendedorServicos.CadastrarAsync(vendedor);
                 return RedirectToAction(nameof(Index));
             }
 
             return View(vendedor);
         }
 
-        public IActionResult Editar(int? id)
+        public async Task<IActionResult> Editar(int? id)
         {
             if (id == null)
                 return RedirectToAction(nameof(Index));
 
-            var vendedor = _vendedorServicos.BuscarVendedor(id.Value);
+            var vendedor = await _vendedorServicos.BuscarVendedorAsync(id.Value);
             if (vendedor == null)
                 return RedirectToAction(nameof(Index));
 
@@ -50,23 +50,23 @@ namespace Projeto_Sistema_de_Vendas.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Editar(Vendedor vendedor)
+        public async Task<IActionResult> Editar(Vendedor vendedor)
         {
             if (ModelState.IsValid)
             {
-                _vendedorServicos.Editar(vendedor);
+                await _vendedorServicos.EditarAsyn(vendedor);
                 return RedirectToAction(nameof(Index));
             }
 
             return View(vendedor);
         }
 
-        public IActionResult Excluir(int? id)
+        public async Task<IActionResult> Excluir(int? id)
         {
             if (id == null)
                 return RedirectToAction(nameof(Index));
 
-            var vendedor = _vendedorServicos.BuscarVendedor(id.Value);
+            var vendedor = await _vendedorServicos.BuscarVendedorAsync(id.Value);
             if (vendedor == null)
                 return RedirectToAction(nameof(Index));
 
@@ -75,9 +75,9 @@ namespace Projeto_Sistema_de_Vendas.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Excluir(Vendedor vendedor)
+        public async Task<IActionResult> Excluir(Vendedor vendedor)
         {
-            _vendedorServicos.Excluir(vendedor);
+            await _vendedorServicos.ExcluirAsync(vendedor);
             return RedirectToAction(nameof(Index));
         }
     }

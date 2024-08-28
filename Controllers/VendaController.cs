@@ -14,62 +14,62 @@ namespace Projeto_Sistema_de_Vendas.Controllers
             _vendaServicos = vendaServicos;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View(_vendaServicos.EncontrarTodasVendas());
+            return View(await _vendaServicos.EncontrarTodasVendasAsync());
         }
 
-        public IActionResult Cadastrar()
+        public async Task<IActionResult> Cadastrar()
         {
-            CarregarViewBag();
+            await CarregarViewBag();
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Cadastrar(Venda venda)
+        public async Task<IActionResult> Cadastrar(Venda venda)
         {
             if (ModelState.IsValid)
             {
-                _vendaServicos.Cadastrar(venda);
+                await _vendaServicos.CadastrarAsync(venda);
                 return RedirectToAction(nameof(Index));
             }
 
-            CarregarViewBag();
+            await CarregarViewBag();
             return View(venda);
         }
 
-        public IActionResult Excluir(int? id)
+        public async Task<IActionResult> Excluir(int? id)
         {
             if (id == null)
                 return RedirectToAction(nameof(Index));
 
-            var venda = _vendaServicos.EncontrarVenda(id.Value);
+            var venda = await _vendaServicos.EncontrarVendaAsync(id.Value);
             if (venda == null)
                 return RedirectToAction(nameof(Index));
 
-            CarregarViewBag();
+            await CarregarViewBag();
             return View(venda);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Excluir(Venda venda)
+        public async Task<IActionResult> Excluir(Venda venda)
         {
-            _vendaServicos.Excluir(venda);
+            await _vendaServicos.ExcluirAsync(venda);
             return RedirectToAction(nameof(Index));
         }
 
-        public void CarregarViewBag()
+        public async Task CarregarViewBag()
         {
-            ViewBag.Cliente = new SelectList(_vendaServicos.EncontrarTodosClientes(), "Id", "Nome");
-            ViewBag.Vendedor = new SelectList(_vendaServicos.EncontrarTodosVendedores(), "Id", "Nome");
-            ViewBag.Produto = new SelectList(_vendaServicos.EncontrarTodosProdutos(), "Id", "Nome");
+            ViewBag.Cliente = new SelectList(await _vendaServicos.EncontrarTodosClientesAsync(), "Id", "Nome");
+            ViewBag.Vendedor = new SelectList(await _vendaServicos.EncontrarTodosVendedoresAsync(), "Id", "Nome");
+            ViewBag.Produto = new SelectList(await _vendaServicos.EncontrarTodosProdutosAsync(), "Id", "Nome");
         }
 
-        public JsonResult GetPrecoProduto(int id)
+        public async Task<JsonResult> GetPrecoProduto(int id)
         {
-            var produto = _vendaServicos.EncontrarProduto(id);
+            var produto = await _vendaServicos.EncontrarProdutoAsync(id);
             if (produto != null)
             {
                 return Json(new { preco = produto.PrecoUnitario });
