@@ -34,8 +34,16 @@ namespace Projeto_Sistema_de_Vendas.Servicos
                 await _context.SaveChangesAsync();
                 foreach (var item in listaProduto) //Aqui o laço vai percerrer todos os itens da listaProduto(JSON), que já foi deserializada
                 {
+                    
                     item.VendaId = venda.Id; //Aqui atribuo o Id da venda para a listaProduto(JSON) que veio sem o Id da venda, o Id veio do objeto venda que foi passado como parâmetro
                     _context.VendaProdutos.Add(item); //Adiciono os atributos na tabela VendaProduto
+
+                    var produto = await _context.Produtos.FindAsync(item.ProdutoId); //Atribui o produto que veio da ListaJSON pelo ProdutoId
+                    if(produto != null && produto.QuantidadeEmEstoque >= item.QuantidadeVendida) //Verifica se o produto nao é nullo e que tem estoque para venda
+                    {
+                        produto.QuantidadeEmEstoque -= item.QuantidadeVendida;
+                        _context.Produtos.Update(produto);
+                    }
                 }
                 await _context.SaveChangesAsync();
             }
