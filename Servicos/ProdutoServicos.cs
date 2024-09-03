@@ -1,3 +1,4 @@
+using System.Globalization;
 using Microsoft.EntityFrameworkCore;
 using Projeto_Sistema_de_Vendas.Context;
 using Projeto_Sistema_de_Vendas.Models;
@@ -23,7 +24,7 @@ namespace Projeto_Sistema_de_Vendas.Servicos
             if (produto != null)
             {
                 _context.Produtos.Add(produto);
-                await _context.SaveChangesAsync ();
+                await _context.SaveChangesAsync();
             }
         }
 
@@ -53,5 +54,6 @@ namespace Projeto_Sistema_de_Vendas.Servicos
         {
             return await _context.Produtos.FindAsync(id);
         }
+
     }
 }

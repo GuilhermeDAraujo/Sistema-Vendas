@@ -1,10 +1,10 @@
-@model Projeto_Sistema_de_Vendas.ViewModels.RelatorioPorVendedorViewModel
+@model Projeto_Sistema_de_Vendas.Models.Relatorio
 
 
 <form asp-action="Vendedor">
     <div class="form-group">
         <label><strong>Vendedor</strong></label>
-        <select asp-for="ProcurarVendedorId" asp-items="@ViewBag.VendedorLista" class="form-control"></select>
+        <select asp-for="ProcurarVendedorId" asp-items="@ViewBag.Vendedores" class="form-control"></select>
     </div>
     <br>
     <button type="submit" class="btn btn-primary w-100">Pesquisar</button>

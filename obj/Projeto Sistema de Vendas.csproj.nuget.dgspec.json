@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Guilherme\\Projeto Sistema de Vendas\\Projeto Sistema de Vendas.csproj": {}
+    "D:\\Guilherme\\Projeto Sistema de Vendas\\Projeto Sistema de Vendas.csproj": {}
   },
   "projects": {
-    "G:\\Guilherme\\Projeto Sistema de Vendas\\Projeto Sistema de Vendas.csproj": {
+    "D:\\Guilherme\\Projeto Sistema de Vendas\\Projeto Sistema de Vendas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Guilherme\\Projeto Sistema de Vendas\\Projeto Sistema de Vendas.csproj",
+        "projectUniqueName": "D:\\Guilherme\\Projeto Sistema de Vendas\\Projeto Sistema de Vendas.csproj",
         "projectName": "Projeto Sistema de Vendas",
-        "projectPath": "G:\\Guilherme\\Projeto Sistema de Vendas\\Projeto Sistema de Vendas.csproj",
+        "projectPath": "D:\\Guilherme\\Projeto Sistema de Vendas\\Projeto Sistema de Vendas.csproj",
         "packagesPath": "C:\\Users\\guilh\\.nuget\\packages\\",
-        "outputPath": "G:\\Guilherme\\Projeto Sistema de Vendas\\obj\\",
+        "outputPath": "D:\\Guilherme\\Projeto Sistema de Vendas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\guilh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

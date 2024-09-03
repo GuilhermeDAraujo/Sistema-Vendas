@@ -9,119 +9,119 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Projeto_Sistema_de_Vendas
 build_property.RootNamespace = Projeto_Sistema_de_Vendas
-build_property.ProjectDir = G:\Guilherme\Projeto Sistema de Vendas\
+build_property.ProjectDir = D:\Guilherme\Projeto Sistema de Vendas\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = G:\Guilherme\Projeto Sistema de Vendas
+build_property.MSBuildProjectDirectory = D:\Guilherme\Projeto Sistema de Vendas
 build_property._RazorSourceGeneratorDebug = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Cliente/Cadastrar.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Cliente/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYWRhc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Cliente/Editar.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Cliente/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Cliente/Excluir.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Cliente/Excluir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFeGNsdWlyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Cliente/Index.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Cliente/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Home/Index.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Home/Login.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Home/Menu.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Home/Menu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Home/Privacy.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Produto/Cadastrar.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Produto/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xDYWRhc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Produto/Editar.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Produto/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Produto/Excluir.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Produto/Excluir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xFeGNsdWlyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Produto/Index.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Produto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Relatorio/Index.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Relatorio/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvcmlvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Relatorio/Vendas.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Relatorio/Vendas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvcmlvXFZlbmRhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Relatorio/Vendedor.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Relatorio/Vendedor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvcmlvXFZlbmRlZG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Shared/Error.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Venda/Cadastrar.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Venda/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFcQ2FkYXN0cmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Venda/Excluir.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Venda/Excluir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFcRXhjbHVpci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Venda/Index.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Venda/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Vendedor/Cadastrar.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Vendedor/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3JcQ2FkYXN0cmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Vendedor/Editar.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Vendedor/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3JcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Vendedor/Excluir.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Vendedor/Excluir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3JcRXhjbHVpci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Vendedor/Index.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Vendedor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3JcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/_ViewImports.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/_ViewStart.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/Guilherme/Projeto Sistema de Vendas/Views/Shared/_Layout.cshtml]
+[D:/Guilherme/Projeto Sistema de Vendas/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7b2zndqrjh

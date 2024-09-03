@@ -23,8 +23,8 @@ namespace Projeto_Sistema_de_Vendas.Models
 
         [Required(ErrorMessage = "Informe o Valor Unitário!")]
         [Range(0, double.MaxValue, ErrorMessage = "Valor Não Pode Ser Negativa")]
-        [RegularExpression(@"^\d+(\.\d{1,2})?$", ErrorMessage ="Utilize o ponto como separador decimal")]
         [DisplayFormat(DataFormatString = "{0:F2}")]
+        [RegularExpression(@"^\d+(\.\d{1,2})?$", ErrorMessage ="Utilize o ponto como separador decimal")]
         public decimal? PrecoUnitario {get;set;}
 
 

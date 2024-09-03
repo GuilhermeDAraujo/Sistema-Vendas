@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Projeto_Sistema_de_Vendas.Context;
 using Projeto_Sistema_de_Vendas.Servicos;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,8 +28,22 @@ builder.Services.AddScoped<VendedorServicos>();
 builder.Services.AddScoped<ClienteServicos>();
 builder.Services.AddScoped<ProdutoServicos>();
 builder.Services.AddScoped<VendaServicos>();
+builder.Services.AddScoped<RelatorioServices>();
+
 
 var app = builder.Build();
+
+
+var enUS = new CultureInfo("en-US");
+var localizationOptions = new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture(enUS),
+    SupportedCultures = new List<CultureInfo> { enUS },
+    SupportedUICultures = new List<CultureInfo> { enUS }
+};
+
+app.UseRequestLocalization(localizationOptions);
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

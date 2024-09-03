@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Lotaov4NTAhLLQbKu8kMfLlns4szV4eqX3Ra8iBqzrQ=",
+  "Hash": "PpsmDG35YfS56983mnVhSd7DiGv5EwtIvZNmyN3+bO8=",
   "Source": "Projeto Sistema de Vendas",
   "BasePath": "_content/Projeto Sistema de Vendas",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Projeto Sistema de Vendas\\wwwroot",
       "Source": "Projeto Sistema de Vendas",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Projeto Sistema de Vendas.styles.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Projeto Sistema de Vendas.styles.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Computed",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "Projeto Sistema de Vendas.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "G:\\Guilherme\\Projeto Sistema de Vendas\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Projeto Sistema de Vendas.styles.css"
+      "OriginalItemSpec": "D:\\Guilherme\\Projeto Sistema de Vendas\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Projeto Sistema de Vendas.styles.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Projeto Sistema de Vendas.bundle.scp.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Projeto Sistema de Vendas.bundle.scp.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Computed",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "Projeto Sistema de Vendas.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "G:\\Guilherme\\Projeto Sistema de Vendas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Projeto Sistema de Vendas.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Guilherme\\Projeto Sistema de Vendas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Projeto Sistema de Vendas.bundle.scp.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\css\\site.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\css\\View\\Login.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\css\\View\\Login.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "css/View/Login.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\View\\Login.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\favicon.ico",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\clientes.png",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\clientes.png",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "images/clientes.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\images\\clientes.png"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\configuracoes.png",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\configuracoes.png",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "images/configuracoes.png",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\images\\configuracoes.png"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\fundo.png",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\fundo.png",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "images/fundo.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\images\\fundo.png"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\produtos.png",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\produtos.png",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "images/produtos.png",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\images\\produtos.png"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\relatorios.png",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\relatorios.png",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "images/relatorios.png",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\relatorios.png"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\vendas.png",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\vendas.png",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "images/vendas.png",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\vendas.png"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\vendedores.png",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\images\\vendedores.png",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "images/vendedores.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\vendedores.png"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\js\\site.js",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Projeto Sistema de Vendas",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
+      "ContentRoot": "D:\\Guilherme\\Projeto Sistema de Vendas\\wwwroot\\",
       "BasePath": "_content/Projeto Sistema de Vendas",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",

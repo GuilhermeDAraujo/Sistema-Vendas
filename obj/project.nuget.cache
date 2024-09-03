@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uSmpDp8T2FQ=",
+  "dgSpecHash": "eKn+inPwxro=",
   "success": true,
-  "projectFilePath": "G:\\Guilherme\\Projeto Sistema de Vendas\\Projeto Sistema de Vendas.csproj",
+  "projectFilePath": "D:\\Guilherme\\Projeto Sistema de Vendas\\Projeto Sistema de Vendas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guilh\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\guilh\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

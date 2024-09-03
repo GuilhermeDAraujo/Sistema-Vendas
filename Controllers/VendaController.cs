@@ -31,10 +31,18 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         {
             if (ModelState.IsValid)
             {
-                await _vendaServicos.CadastrarAsync(venda);
+                bool sucesso = await _vendaServicos.CadastrarAsync(venda);
+
+                //Se for diferente de sucesso mostra a msg
+                if (!sucesso)
+                {
+                    //Mensagem exibida na View atraves do ValidationSummary
+                    ModelState.AddModelError(string.Empty, "Estoque insuficiente para um ou mais produtos");
+                    await CarregarViewBag();
+                    return View(venda);
+                }
                 return RedirectToAction(nameof(Index));
             }
-
             await CarregarViewBag();
             return View(venda);
         }

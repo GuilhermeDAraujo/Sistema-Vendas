@@ -2,6 +2,13 @@
 
 <h1>Cadastrar Nova Venda</h1>
 
+@if(!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @Html.ValidationSummary(false, "Corrija os seguintes erros: ")
+    </div>
+}
+
 <form asp-action="Cadastrar">
     <div class="form-group">
         <label asp-for="ClienteId" class="control-label"><strong>Cliente</strong></label>
@@ -127,8 +134,8 @@
                 ListaProdutosJSON.value = JSON.stringify(Itens.Produtos);
 
                 TotalVenda = Itens.Produtos.reduce((acc, item) => acc + (item.QuantidadeVendida * item.ValorProduto), 0)
-                document.getElementById("divTotal").innerHTML = TotalVenda.toFixed(2).replace('.', ',');
-                document.getElementById("TotalVenda").value = TotalVenda.toString().replace('.', ',');
+                document.getElementById("divTotal").innerHTML = TotalVenda.toFixed(2);
+                document.getElementById("TotalVenda").value = TotalVenda.toString();
 
                 var linhaProduto = `
             <tr>
@@ -145,20 +152,9 @@
             }
         })
     }
-
-    @* function RemoverProduto(produtoId){
-        Itens.Produtos = Itens.Produtos.filter(p => p.ProdutoId !=== produtoId);
-
-        ListaProdutosJSON.value = JSON.stringify(Itens.Produtos);
-
-        TotalVenda = Itens.Produtos.reduce((acc, item) => acc + (item.QuantidadeVendida * item.ValorProduto), 0);
-        document.getElementById("divTotal").innerHTML = TotalVenda.toFixed(2).replace('.',',');
-        document.getElementById("TotalVenda").value = TotalVenda.toString().replace('.',',');
-
-        AtualizarTabelaProdutos();
-    } *@
-
 </script>
+
+
 
 @section Scripts {
     @{

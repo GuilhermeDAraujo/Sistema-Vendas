@@ -2,17 +2,19 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Projeto_Sistema_de_Vendas.Context;
+using Projeto_Sistema_de_Vendas.Models;
+using Projeto_Sistema_de_Vendas.Servicos;
 using Projeto_Sistema_de_Vendas.ViewModels;
 
 namespace Projeto_Sistema_de_Vendas.Controllers
 {
     public class RelatorioController : Controller
     {
-        private readonly SistemaVendaContext _context;
+        private readonly RelatorioServices _relatorio;
 
-        public RelatorioController(SistemaVendaContext context)
+        public RelatorioController(RelatorioServices context)
         {
-            _context = context;
+            _relatorio = context;
         }
 
         public IActionResult Index()
@@ -21,51 +23,47 @@ namespace Projeto_Sistema_de_Vendas.Controllers
         }
 
         public IActionResult Vendas()
-        {
-            return View(new RelatorioVendasDataViewModel()); //retorna a view com o modelo "Relatorio"
+        {   
+            return View(new Relatorio()); //retorna a view com o modelo "Relatorio"
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Vendas(RelatorioVendasDataViewModel relatorio)
+        public async Task<IActionResult> Vendas(Relatorio relatorio)
         {
-            if (relatorio != null && ModelState.IsValid) //verifica se o objeto é não nulo e valido
+            if(relatorio == null)
             {
-                relatorio.ListaDeVendas = _context.Vendas //busca as vendas no banco que estão dentro do filtro
-                    .Where(v => v.DataVenda >= relatorio.DataDe && v.DataVenda <= relatorio.DataAte) //filtra as vendas pelo periodo datavenda Maior/Igual a dataDe e datavenda Menos/igual a dataAte
-                    .Include(v => v.Vendedor) //inclui o vendedor na consulta
-                    .Include(v => v.Cliente) //inclui o cliente na consulta
-                    .ToList();
+                return BadRequest("Relatorio não pode ser nulo");
             }
-
+            
+            relatorio = await _relatorio.ConsultaAsync(relatorio);
             return View(relatorio);
         }
 
-        public IActionResult Vendedor()
+        public async Task<IActionResult> Vendedor()
         {
-            CarregarViewBag();
-            return View(new RelatorioPorVendedorViewModel());
+            await CarregarViewBag();
+            return View(new Relatorio());
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Vendedor(RelatorioPorVendedorViewModel relatorio)
+        public async Task<IActionResult> Vendedor(Relatorio relatorio)
         {
-            if (relatorio != null && ModelState.IsValid)
+            if(relatorio == null)
             {
-                relatorio.ListaDeVendas = _context.Vendas
-                .Where(v => v.VendedorId == relatorio.ProcurarVendedorId)
-                .Include(v => v.Vendedor)
-                .Include(c => c.Cliente)
-                .ToList();
+                return BadRequest("Relatorio não pode ser nulo");
             }
-            CarregarViewBag();
+
+            relatorio = await _relatorio.ConsultaVendedor(relatorio);
+
+            await CarregarViewBag();
             return View(relatorio);
         }
 
-        public void CarregarViewBag()
+        public async Task CarregarViewBag()
         {
-            ViewBag.VendedorLista = new SelectList(_context.Vendedores.ToList(), "Id", "Nome");
+            ViewBag.Vendedores = new SelectList(await _relatorio.EncontrarTodosVendedoresAsync(), "Id", "Nome");
         }
     }
 }

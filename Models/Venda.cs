@@ -9,8 +9,8 @@ namespace Projeto_Sistema_de_Vendas.Models
 
         [Required(ErrorMessage = "Informe a Data da realização da Venda!")]
         [DataType(DataType.Date)]
-        public DateTime DataVenda { get; set; } = DateTime.Now;
-
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
+        public DateTime DataVenda { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:F2}")]
         public decimal Total { get; set; }

@@ -1,14 +1,14 @@
-@model Projeto_Sistema_de_Vendas.ViewModels.RelatorioVendasDataViewModel
+@model Projeto_Sistema_de_Vendas.Models.Relatorio
 
 
 <form asp-action="Vendas">
     <div class="form-group">
         <label><strong>Período</strong></label>
-        <input asp-for="DataDe" class="form-control" />
+        <input type="date" name="minData" class="form-control" />
     </div>
     <br>
     <div class="form-group">
-        <input asp-for="DataAte" class="form-control" />
+        <input type="date" name="maxData" class="form-control"/>
     </div>
     <br>
     <button type="submit" class="btn btn-primary w-100">Pesquisar</button>
