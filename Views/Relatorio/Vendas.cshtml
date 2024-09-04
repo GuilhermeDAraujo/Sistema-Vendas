@@ -8,7 +8,7 @@
     </div>
     <br>
     <div class="form-group">
-        <input type="date" name="maxData" class="form-control"/>
+        <input type="date" name="maxData" class="form-control" />
     </div>
     <br>
     <button type="submit" class="btn btn-primary w-100">Pesquisar</button>
@@ -16,41 +16,46 @@
 
 <br>
 
-@if(Model.ListaDeVendas != null && Model.ListaDeVendas.Count > 0) @*Verifica se a lista é nula e se a lista tem + de 0 linha*@
+@if (Model.ListaDeVendas != null && Model.ListaDeVendas.Count > 0) @*Verifica se a lista é nula e se a lista tem + de 0
+linha*@
 {
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th class="text-center align-middle">Data da Venda</th>
-            <th class="text-center align-middle">Total</th>
-            <th class="text-center align-middle">Vendedor</th>
-            <th class="text-center align-middle">Cliente</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.ListaDeVendas) @*Percorre cada item da ListaVendas que foi instanciada na controller*@
-        {
+    <table class="table table-bordered">
+        <thead>
             <tr>
-                <td class="text-center align-middle">
-                    @item.DataVenda.ToString("dd/MM/yyyy")
-                </td>
-                <td class="text-center align-middle">
-                    R$ @item.Total
-                </td>
-                <td class="text-center align-middle">
-                    @item.Vendedor?.Nome
-                </td>
-                <td class="text-center align-middle">
-                    @item.Cliente?.Nome
-                </td>
+                <th class="text-center align-middle">Data da Venda</th>
+                <th class="text-center align-middle">Total</th>
+                <th class="text-center align-middle">Vendedor</th>
+                <th class="text-center align-middle">Cliente</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.ListaDeVendas) @*Percorre cada item da ListaVendas que foi instanciada na
+        controller*@
+            {
+                <tr>
+                    <td class="text-center align-middle">
+                        @item.DataVenda.ToString("dd/MM/yyyy")
+                    </td>
+                    <td class="text-center align-middle">
+                        R$ @item.Total
+                    </td>
+                    <td class="text-center align-middle">
+                        @item.Vendedor?.Nome
+                    </td>
+                    <td class="text-center align-middle">
+                        @item.Cliente?.Nome
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div style="text-align: right; font-size: 22px; margin-top: 20px;">
+        <strong>Total: R$ @Model.Total</strong>
+    </div>
 }
 else
 {
-    <p class="text-center text-primary" >Nenhuma venda encontrada para o período selecionado</p>
+    <p class="text-center text-primary">Nenhuma venda encontrada para o período selecionado</p>
 }
 
 <br>

@@ -28,7 +28,7 @@
             {
                 <tr>
                     <td class="text-center align-middle">
-                        @item.Vendedor.Nome     
+                        @item.Vendedor.Nome
                     </td>
                     <td class="text-center align-middle">
                         @item.Cliente.Nome
@@ -43,6 +43,9 @@
             }
         </tbody>
     </table>
+    <div style="text-align: right; font-size: 22px; margin-top: 20px;">
+        <strong>Total: R$ @Model.Total</strong>
+    </div>
 }
 else
 {

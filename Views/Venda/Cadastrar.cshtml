@@ -2,7 +2,7 @@
 
 <h1>Cadastrar Nova Venda</h1>
 
-@if(!ViewData.ModelState.IsValid)
+@if (!ViewData.ModelState.IsValid)
 {
     <div class="alert alert-danger">
         @Html.ValidationSummary(false, "Corrija os seguintes erros: ")
@@ -75,7 +75,8 @@
     <br>
     <br>
     <div class="form-group">
-        <input type="submit" value="Cadastrar" class="btn btn-primary w-100" />
+
+        <input type="submit" value="Cadastrar Venda" class="btn btn-primary w-100" />
     </div>
 </form>
 <a asp-action="Index" class="btn btn-success w-100 mt-3">Voltar</a>
@@ -137,24 +138,53 @@
                 document.getElementById("divTotal").innerHTML = TotalVenda.toFixed(2);
                 document.getElementById("TotalVenda").value = TotalVenda.toString();
 
-                var linhaProduto = `
-            <tr>
-                <td class="text-center align-middle">${nomeProduto}</td>
-                <td class="text-center align-middle">${quantidade}</td>
-                <td class="text-center align-middle">R$ ${precoUnitario.toFixed(2)}</td>
-                <td class="text-center align-middle">R$ ${total.toFixed(2)}</td>
+                AtualizarTabelaProdutos();
+            }
+        });
+    }
+
+    function AtualizarTabelaProdutos() {
+        ListaProdutos.innerHTML = ''; // Limpa o conteúdo atual
+
+        Itens.Produtos.forEach(item => {
+            var totalProduto = (item.QuantidadeVendida * item.ValorProduto).toFixed(2);
+            var linhaProduto = `
+            <tr id="produto_${item.ProdutoId}">
+                <td class="text-center align-middle">${item.NomeProduto}</td>
+                <td class="text-center align-middle">${item.QuantidadeVendida}</td>
+                <td class="text-center align-middle">R$ ${item.ValorProduto.toFixed(2)}</td>
+                <td class="text-center align-middle">R$ ${totalProduto}</td>
                 <td class="text-center align-middle">
-                    <button type="button" class="btn btn-danger">Excluir</button>
+                    <button type="button" class="btn btn-danger" onclick="ExcluirProduto(${item.ProdutoId})">Excluir</button>
                 </td>
             </tr>`;
 
-                ListaProdutos.innerHTML += linhaProduto;
-            }
-        })
+            ListaProdutos.innerHTML += linhaProduto;
+        });
     }
+
+    function ExcluirProduto(produtoId) {
+        // Remove o produto da lista de itens
+        Itens.Produtos = Itens.Produtos.filter(p => p.ProdutoId !== produtoId);
+
+        AtualizarTabelaProdutos()
+
+        // Remove a linha da tabela
+        var linha = document.getElementById(`produto_${produtoId}`);
+        if (linha) {
+            linha.remove();
+        }
+
+        // Recalcula o total
+        TotalVenda = Itens.Produtos.reduce((acc, item) => acc + (item.QuantidadeVendida * item.ValorProduto), 0);
+        document.getElementById("divTotal").innerHTML = TotalVenda.toFixed(2);
+        document.getElementById("TotalVenda").value = TotalVenda.toString();
+
+        // Atualiza o JSON
+        ListaProdutosJSON.value = JSON.stringify(Itens.Produtos);
+    }
+
 </script>
-
-
 
 @section Scripts {
     @{

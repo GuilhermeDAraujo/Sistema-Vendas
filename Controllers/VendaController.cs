@@ -37,7 +37,7 @@ namespace Projeto_Sistema_de_Vendas.Controllers
                 if (!sucesso)
                 {
                     //Mensagem exibida na View atraves do ValidationSummary
-                    ModelState.AddModelError(string.Empty, "Estoque insuficiente para um ou mais produtos");
+                    ModelState.AddModelError(string.Empty, "Venda Não Realizada! Estoque insuficiente para um ou mais produtos");
                     await CarregarViewBag();
                     return View(venda);
                 }

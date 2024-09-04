@@ -43,7 +43,6 @@ namespace Projeto_Sistema_de_Vendas.Servicos
                     .OrderByDescending(v => v.DataVenda)
                     .ToListAsync();
             }
-
             return relatorio;
         }
 

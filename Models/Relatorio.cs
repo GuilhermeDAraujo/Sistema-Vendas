@@ -17,5 +17,13 @@ namespace Projeto_Sistema_de_Vendas.Models
         public DateTime maxData { get; set; }
         public int ProcurarVendedorId { get; set; }
         public List<Venda> ListaDeVendas { get; set; } = new List<Venda>(); //Armazena a lista de vendas que será retornada com base no filtro
+
+        public decimal Total
+        {
+            get
+            {
+                return ListaDeVendas.Sum(v => v.Total);
+            }
+        }
     }
 }

@@ -41,7 +41,6 @@
                 <th class="text-center align-middle">Produto</th>
                 <th class="text-center align-middle">Quantidade</th>
                 <th class="text-center align-middle">Preço Unitário</th>
-                <th class="text-center align-middle">Total</th>
             </tr>
         </thead>
 
@@ -58,13 +57,16 @@
                     <td class="text-center align-middle">
                         R$ @Html.DisplayFor(obj => item.ValorProduto)
                     </td>
-                    <td class="text-center align-middle">
-                        R$ @Html.DisplayFor(obj => item.Venda.Total)
-                    </td>
                 </tr>
             }
         </tbody>
     </table>
+
+    @*Imprimi o valor total relacionado a venda*@
+    <div style="text-align: right; font-size: 22px; margin-top: 20px;">
+        <strong>Total: R$ @Html.DisplayFor(obj => Model.Total)</strong>
+    </div>
+
     <br>
     <br>
     <div class="form-group">
